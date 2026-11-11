@@ -1,0 +1,7 @@
+dist/
+coverage/
+playwright-report/
+test-results/
+package-lock.json
+public/models/
+src/data/scope/muscle_scope_v1.json

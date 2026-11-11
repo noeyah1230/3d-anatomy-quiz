@@ -1,0 +1,1080 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "fileName": "Muscles of the Human Body.pdf",
+    "chapter": "The Muscular System",
+    "pageCount": 2,
+    "printedTextbookPages": [
+      232,
+      233
+    ],
+    "figures": [
+      "6.22 (anterior)",
+      "6.23 (posterior)"
+    ],
+    "distributionNote": "Do not commit the user-provided textbook PDF or scanned pages to a public repository without rights clearance; use this independently transcribed factual name inventory instead."
+  },
+  "releaseTarget": "v1.0",
+  "expectedUniqueQuizTargets": 46,
+  "countRule": "Count each unique PDF-labeled muscle or named muscle-group once across anterior and posterior views; unify Adductor muscles and Adductor muscle. Quadriceps/Hamstrings are category headings not extra individual-muscle targets.",
+  "targets": [
+    {
+      "id": "temporalis",
+      "pdfLabel": "Temporalis",
+      "pdfLabelVariants": [
+        "Temporalis"
+      ],
+      "region": "head_face",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "masseter",
+      "pdfLabel": "Masseter",
+      "pdfLabelVariants": [
+        "Masseter"
+      ],
+      "region": "head_face",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "frontalis",
+      "pdfLabel": "Frontalis",
+      "pdfLabelVariants": [
+        "Frontalis"
+      ],
+      "region": "head_face",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "orbicularis_oculi",
+      "pdfLabel": "Orbicularis oculi",
+      "pdfLabelVariants": [
+        "Orbicularis oculi"
+      ],
+      "region": "head_face",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "zygomaticus",
+      "pdfLabel": "Zygomaticus",
+      "pdfLabelVariants": [
+        "Zygomaticus"
+      ],
+      "region": "head_face",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "ambiguous_umbrella",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "orbicularis_oris",
+      "pdfLabel": "Orbicularis oris",
+      "pdfLabelVariants": [
+        "Orbicularis oris"
+      ],
+      "region": "head_face",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "occipitalis",
+      "pdfLabel": "Occipitalis",
+      "pdfLabelVariants": [
+        "Occipitalis"
+      ],
+      "region": "head_face",
+      "sourcePages": [
+        2
+      ],
+      "sourceFigures": [
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "platysma",
+      "pdfLabel": "Platysma",
+      "pdfLabelVariants": [
+        "Platysma"
+      ],
+      "region": "neck",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "sternocleidomastoid",
+      "pdfLabel": "Sternocleidomastoid",
+      "pdfLabelVariants": [
+        "Sternocleidomastoid"
+      ],
+      "region": "neck",
+      "sourcePages": [
+        1,
+        2
+      ],
+      "sourceFigures": [
+        "6.22",
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "trapezius",
+      "pdfLabel": "Trapezius",
+      "pdfLabelVariants": [
+        "Trapezius"
+      ],
+      "region": "shoulder_back",
+      "sourcePages": [
+        1,
+        2
+      ],
+      "sourceFigures": [
+        "6.22",
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "deltoid",
+      "pdfLabel": "Deltoid",
+      "pdfLabelVariants": [
+        "Deltoid"
+      ],
+      "region": "shoulder_back",
+      "sourcePages": [
+        1,
+        2
+      ],
+      "sourceFigures": [
+        "6.22",
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "latissimus_dorsi",
+      "pdfLabel": "Latissimus dorsi",
+      "pdfLabelVariants": [
+        "Latissimus dorsi"
+      ],
+      "region": "shoulder_back",
+      "sourcePages": [
+        2
+      ],
+      "sourceFigures": [
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "pectoralis_minor",
+      "pdfLabel": "Pectoralis minor",
+      "pdfLabelVariants": [
+        "Pectoralis minor"
+      ],
+      "region": "thorax",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "pectoralis_major",
+      "pdfLabel": "Pectoralis major",
+      "pdfLabelVariants": [
+        "Pectoralis major"
+      ],
+      "region": "thorax",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "serratus_anterior",
+      "pdfLabel": "Serratus anterior",
+      "pdfLabelVariants": [
+        "Serratus anterior"
+      ],
+      "region": "thorax",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "intercostals",
+      "pdfLabel": "Intercostals",
+      "pdfLabelVariants": [
+        "Intercostals"
+      ],
+      "region": "thorax",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "muscle_group",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "triceps_brachii",
+      "pdfLabel": "Triceps brachii",
+      "pdfLabelVariants": [
+        "Triceps brachii"
+      ],
+      "region": "upper_arm",
+      "sourcePages": [
+        1,
+        2
+      ],
+      "sourceFigures": [
+        "6.22",
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "biceps_brachii",
+      "pdfLabel": "Biceps brachii",
+      "pdfLabelVariants": [
+        "Biceps brachii"
+      ],
+      "region": "upper_arm",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "brachialis",
+      "pdfLabel": "Brachialis",
+      "pdfLabelVariants": [
+        "Brachialis"
+      ],
+      "region": "upper_arm",
+      "sourcePages": [
+        1,
+        2
+      ],
+      "sourceFigures": [
+        "6.22",
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "brachioradialis",
+      "pdfLabel": "Brachioradialis",
+      "pdfLabelVariants": [
+        "Brachioradialis"
+      ],
+      "region": "forearm",
+      "sourcePages": [
+        1,
+        2
+      ],
+      "sourceFigures": [
+        "6.22",
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "flexor_carpi_radialis",
+      "pdfLabel": "Flexor carpi radialis",
+      "pdfLabelVariants": [
+        "Flexor carpi radialis"
+      ],
+      "region": "forearm",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "extensor_carpi_radialis_longus",
+      "pdfLabel": "Extensor carpi radialis longus",
+      "pdfLabelVariants": [
+        "Extensor carpi radialis longus"
+      ],
+      "region": "forearm",
+      "sourcePages": [
+        2
+      ],
+      "sourceFigures": [
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "flexor_carpi_ulnaris",
+      "pdfLabel": "Flexor carpi ulnaris",
+      "pdfLabelVariants": [
+        "Flexor carpi ulnaris"
+      ],
+      "region": "forearm",
+      "sourcePages": [
+        2
+      ],
+      "sourceFigures": [
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "extensor_carpi_ulnaris",
+      "pdfLabel": "Extensor carpi ulnaris",
+      "pdfLabelVariants": [
+        "Extensor carpi ulnaris"
+      ],
+      "region": "forearm",
+      "sourcePages": [
+        2
+      ],
+      "sourceFigures": [
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "extensor_digitorum",
+      "pdfLabel": "Extensor digitorum",
+      "pdfLabelVariants": [
+        "Extensor digitorum"
+      ],
+      "region": "forearm",
+      "sourcePages": [
+        2
+      ],
+      "sourceFigures": [
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "rectus_abdominis",
+      "pdfLabel": "Rectus abdominis",
+      "pdfLabelVariants": [
+        "Rectus abdominis"
+      ],
+      "region": "abdomen",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "external_oblique",
+      "pdfLabel": "External oblique",
+      "pdfLabelVariants": [
+        "External oblique"
+      ],
+      "region": "abdomen",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "internal_oblique",
+      "pdfLabel": "Internal oblique",
+      "pdfLabelVariants": [
+        "Internal oblique"
+      ],
+      "region": "abdomen",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "transversus_abdominis",
+      "pdfLabel": "Transversus abdominis",
+      "pdfLabelVariants": [
+        "Transversus abdominis"
+      ],
+      "region": "abdomen",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "iliopsoas",
+      "pdfLabel": "Iliopsoas",
+      "pdfLabelVariants": [
+        "Iliopsoas"
+      ],
+      "region": "hip_thigh",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "composite",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "sartorius",
+      "pdfLabel": "Sartorius",
+      "pdfLabelVariants": [
+        "Sartorius"
+      ],
+      "region": "hip_thigh",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "adductor_muscles",
+      "pdfLabel": "Adductor muscles",
+      "pdfLabelVariants": [
+        "Adductor muscles",
+        "Adductor muscle"
+      ],
+      "region": "hip_thigh",
+      "sourcePages": [
+        1,
+        2
+      ],
+      "sourceFigures": [
+        "6.22",
+        "6.23"
+      ],
+      "targetKind": "muscle_group",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "rectus_femoris",
+      "pdfLabel": "Rectus femoris",
+      "pdfLabelVariants": [
+        "Rectus femoris"
+      ],
+      "region": "hip_thigh",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "vastus_lateralis",
+      "pdfLabel": "Vastus lateralis",
+      "pdfLabelVariants": [
+        "Vastus lateralis"
+      ],
+      "region": "hip_thigh",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "vastus_medialis",
+      "pdfLabel": "Vastus medialis",
+      "pdfLabelVariants": [
+        "Vastus medialis"
+      ],
+      "region": "hip_thigh",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "vastus_intermedius",
+      "pdfLabel": "Vastus intermedius",
+      "pdfLabelVariants": [
+        "Vastus intermedius"
+      ],
+      "region": "hip_thigh",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "gluteus_medius",
+      "pdfLabel": "Gluteus medius",
+      "pdfLabelVariants": [
+        "Gluteus medius"
+      ],
+      "region": "hip_thigh",
+      "sourcePages": [
+        2
+      ],
+      "sourceFigures": [
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "gluteus_maximus",
+      "pdfLabel": "Gluteus maximus",
+      "pdfLabelVariants": [
+        "Gluteus maximus"
+      ],
+      "region": "hip_thigh",
+      "sourcePages": [
+        2
+      ],
+      "sourceFigures": [
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "biceps_femoris",
+      "pdfLabel": "Biceps femoris",
+      "pdfLabelVariants": [
+        "Biceps femoris"
+      ],
+      "region": "hip_thigh",
+      "sourcePages": [
+        2
+      ],
+      "sourceFigures": [
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "semitendinosus",
+      "pdfLabel": "Semitendinosus",
+      "pdfLabelVariants": [
+        "Semitendinosus"
+      ],
+      "region": "hip_thigh",
+      "sourcePages": [
+        2
+      ],
+      "sourceFigures": [
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "semimembranosus",
+      "pdfLabel": "Semimembranosus",
+      "pdfLabelVariants": [
+        "Semimembranosus"
+      ],
+      "region": "hip_thigh",
+      "sourcePages": [
+        2
+      ],
+      "sourceFigures": [
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "fibularis_longus",
+      "pdfLabel": "Fibularis longus",
+      "pdfLabelVariants": [
+        "Fibularis longus"
+      ],
+      "region": "lower_leg",
+      "sourcePages": [
+        1,
+        2
+      ],
+      "sourceFigures": [
+        "6.22",
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "extensor_digitorum_longus",
+      "pdfLabel": "Extensor digitorum longus",
+      "pdfLabelVariants": [
+        "Extensor digitorum longus"
+      ],
+      "region": "lower_leg",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "tibialis_anterior",
+      "pdfLabel": "Tibialis anterior",
+      "pdfLabelVariants": [
+        "Tibialis anterior"
+      ],
+      "region": "lower_leg",
+      "sourcePages": [
+        1
+      ],
+      "sourceFigures": [
+        "6.22"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "gastrocnemius",
+      "pdfLabel": "Gastrocnemius",
+      "pdfLabelVariants": [
+        "Gastrocnemius"
+      ],
+      "region": "lower_leg",
+      "sourcePages": [
+        1,
+        2
+      ],
+      "sourceFigures": [
+        "6.22",
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    },
+    {
+      "id": "soleus",
+      "pdfLabel": "Soleus",
+      "pdfLabelVariants": [
+        "Soleus"
+      ],
+      "region": "lower_leg",
+      "sourcePages": [
+        1,
+        2
+      ],
+      "sourceFigures": [
+        "6.22",
+        "6.23"
+      ],
+      "targetKind": "individual",
+      "mappingStatus": "unmapped",
+      "reviewStatus": "needs_human_review",
+      "modelSource": null,
+      "modelMeshSelectors": [],
+      "proposedSynonyms": [],
+      "verifiedAcceptedAnswers": []
+    }
+  ],
+  "categoryHeadingsNotExtraTargets": [
+    {
+      "name": "Quadriceps",
+      "memberTargetIds": [
+        "rectus_femoris",
+        "vastus_lateralis",
+        "vastus_medialis",
+        "vastus_intermedius"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "name": "Hamstrings",
+      "memberTargetIds": [
+        "biceps_femoris",
+        "semitendinosus",
+        "semimembranosus"
+      ],
+      "sourcePages": [
+        2
+      ]
+    }
+  ],
+  "nonMuscleLabelsExcludedFromMuscleQuiz": [
+    {
+      "name": "Iliotibial tract",
+      "sourcePages": [
+        2
+      ],
+      "reason": "connective-tissue tract, not a muscle"
+    },
+    {
+      "name": "Calcaneal (Achilles) tendon",
+      "sourcePages": [
+        2
+      ],
+      "reason": "tendon, not a muscle"
+    }
+  ],
+  "sourceNotes": [
+    {
+      "targetId": "vastus_intermedius",
+      "note": "Explicitly listed on page 1 but figure says not shown because deep to rectus femoris. Must be visualized with a verified 3D deep-layer view."
+    },
+    {
+      "targetId": "zygomaticus",
+      "note": "PDF labels only Zygomaticus. Do not silently substitute zygomaticus major or minor; resolve intended anatomy and display an explicit group or appropriately scoped question."
+    },
+    {
+      "targetId": "adductor_muscles",
+      "note": "PDF uses plural on page 1 and singular on page 2. The muscle group, not an unspecified individual adductor, is the target."
+    },
+    {
+      "targetId": "intercostals",
+      "note": "PDF gives a group label. Do not assume all intercostal layers are represented by an asset; audit component coverage."
+    },
+    {
+      "targetId": "iliopsoas",
+      "note": "Compound muscle group; audit iliacus and psoas major components before displaying the label."
+    },
+    {
+      "targetId": "occipitalis",
+      "note": "No obvious occipitalis or occipit- entry appeared in the checked Écorché 2026-11-11 structure list. Verify by fresh inspection; if truly absent source another licensable accurate asset, never invent anatomy."
+    },
+    {
+      "targetId": "extensor_digitorum",
+      "note": "Forearm muscle distinct from lower-leg extensor digitorum longus; do not merge."
+    }
+  ]
+}
