@@ -160,3 +160,52 @@ test('keeps the mobile layout within the viewport in light theme', async ({
     390,
   );
 });
+
+test('reviews bilateral and deep geometry and shows unresolved targets without a substitute', async ({
+  page,
+}) => {
+  await page.goto('/?review=1&target=masseter');
+  const target = page.getByLabel('Anatomy target');
+  const canvas = page.locator('canvas');
+  await expect(target.locator('option')).toHaveCount(46);
+  await expect(
+    page.getByText('Pending human review', { exact: false }),
+  ).toBeVisible();
+  await expect
+    .poll(async () => (await colors(page, canvas)).red)
+    .toBeGreaterThan(500);
+
+  await page.getByLabel('Side', { exact: true }).selectOption('right');
+  await page
+    .getByLabel('Component or mesh')
+    .selectOption({ label: 'Deep part' });
+  await page.getByText('Developer mesh inspector').click();
+  const highlights = page.getByRole('list', {
+    name: 'Highlighted source meshes',
+  });
+  await expect(highlights.getByRole('listitem')).toHaveCount(1);
+  await expect(highlights).toContainText('Right deep part of masseter');
+  await page.getByText('Developer mesh inspector').click();
+  await page.getByRole('button', { name: 'Blue' }).click();
+  await expect
+    .poll(async () => (await colors(page, canvas)).blue)
+    .toBeGreaterThan(150);
+
+  await target.selectOption('vastus_intermedius');
+  await expect(
+    page.getByText('lists this target but does not show it', { exact: false }),
+  ).toBeVisible();
+  await expect
+    .poll(async () => (await colors(page, canvas)).blue)
+    .toBeGreaterThan(500);
+  await target.selectOption('intercostals');
+  await expect(page.getByText('Mapping blocked')).toBeVisible();
+  await expect(
+    page.getByText('External intercostal muscle', { exact: false }),
+  ).toBeVisible();
+  await expect(canvas).toHaveCount(0);
+  await target.selectOption('temporalis');
+  await expect(
+    page.getByRole('button', { name: 'Reset review view' }),
+  ).toBeEnabled();
+});

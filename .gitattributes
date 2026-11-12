@@ -1,3 +1,5 @@
 *.glb binary
 src/data/scope/muscle_scope_v1.json -text
 public/models/ecorche.structures.json -text
+public/models/CC-BY-SA-4.0.txt -text
+public/models/ECORCHE_ATTRIBUTION.md -text

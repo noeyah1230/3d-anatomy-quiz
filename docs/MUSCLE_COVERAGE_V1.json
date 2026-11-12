@@ -1,0 +1,3671 @@
+{
+  "asset": {
+    "revision": "320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+    "url": "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+    "license": "CC BY-SA 4.0",
+    "model": "ecorche.meshopt.glb",
+    "manifest": "ecorche.structures.json",
+    "notices": {
+      "CC-BY-SA-4.0.txt": "258ed63e18dedbb7183b2098bdc04e363301ba58bc6aaaf90dd00f4faf198680",
+      "ECORCHE_ATTRIBUTION.md": "a8ab15675197a2423728b50ef641f1a5be0be736bfe6737318bacd0c34efb431"
+    },
+    "sha256": "cc43a8b4f218bee5da78d6c1746bd21470d1d93c6878e33b4ccdbcfc7a72b98e",
+    "manifestSha256": "c0705d69007acad8620541998329b904daca4995cb5790eeac63344544f56a29"
+  },
+  "counts": {
+    "total": 46,
+    "mapped": 42,
+    "missing": 2,
+    "partial": 1,
+    "ambiguous": 1,
+    "blocked": 4,
+    "pending": 42,
+    "rejected": 0,
+    "humanApproved": 0,
+    "withEvidence": 42
+  },
+  "rows": [
+    {
+      "id": "temporalis",
+      "name": "Temporalis",
+      "textbookLabels": [
+        "Temporalis"
+      ],
+      "region": "head_face",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterolateral",
+        "references": [
+          "head"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Temporalis",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left temporalis",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "Z-Anatomy"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right temporalis",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "Z-Anatomy"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "d94e0f0a96b5efc9ea5bb5268d249a3ceffff1bc5b692b0b5719ccfb2670d953",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/temporalis.jpg",
+        "sha256": "ab9279ae9aaa538d9e7fc67d355e2c08d27d5f6c3d72d859a389f40d25e67010",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "masseter",
+      "name": "Masseter",
+      "textbookLabels": [
+        "Masseter"
+      ],
+      "region": "head_face",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterolateral",
+        "references": [
+          "head"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Superficial part",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left superficial part of masseter",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "Z-Anatomy",
+                  "group": "Left masseter"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right superficial part of masseter",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "Z-Anatomy",
+                  "group": "Right masseter"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Deep part",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left deep part of masseter",
+                  "layer": "deep muscles",
+                  "side": "left",
+                  "source": "Z-Anatomy",
+                  "group": "Left masseter"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right deep part of masseter",
+                  "layer": "deep muscles",
+                  "side": "right",
+                  "source": "Z-Anatomy",
+                  "group": "Right masseter"
+                }
+              ]
+            }
+          }
+        ],
+        "note": "Both parts are included. Isolate the deep part to inspect the surface hidden by the superficial part."
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "e347368194f0cfc3bd0fcbaa05ec984b8037d11fb3332549c4e8a7f84f98cd81",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/masseter.jpg",
+        "sha256": "cbf65a254dabddb55de39195bf0aa6bf68b14e54a16341faaf1ae8c9712000b2",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "frontalis",
+      "name": "Frontalis",
+      "textbookLabels": [
+        "Frontalis"
+      ],
+      "region": "head_face",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "head"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Frontalis",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left frontalis",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "Z-Anatomy"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right frontalis",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "Z-Anatomy"
+                }
+              ]
+            }
+          }
+        ],
+        "note": "The textbook uses Frontalis for the frontal belly of occipitofrontalis."
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "6887e84105c78828d8e2454af42db7e2c98ce05a96dc31a5bf1a14f59f109587",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/frontalis.jpg",
+        "sha256": "ec4af693503b848e0719f132c6a6e0a033a6e50e876d51d4224ca0f2e7e7b398",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "orbicularis_oculi",
+      "name": "Orbicularis oculi",
+      "textbookLabels": [
+        "Orbicularis oculi"
+      ],
+      "region": "head_face",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "head"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Orbital part",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left orbital part of orbicularis oculi",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "Z-Anatomy",
+                  "group": "Left orbicularis oculi"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right orbital part of orbicularis oculi",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "Z-Anatomy",
+                  "group": "Right orbicularis oculi"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Palpebral part",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left palpebral part of orbicularis oculi",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "Z-Anatomy",
+                  "group": "Left orbicularis oculi"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right palpebral part of orbicularis oculi",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "Z-Anatomy",
+                  "group": "Right orbicularis oculi"
+                }
+              ]
+            }
+          }
+        ],
+        "note": "Both orbital and palpebral parts are included on each side."
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "c3dd1369ca6e3d9ea8e8c5a2f1f68ceca4bde7bda1acee539d5bbfdff8fbf2b8",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/orbicularis_oculi.jpg",
+        "sha256": "e91c12e845ff5e8b42e02f7bde589eb816f27f21c8cf1ec62e0e95a979f2932d",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "zygomaticus",
+      "name": "Zygomaticus",
+      "textbookLabels": [
+        "Zygomaticus"
+      ],
+      "region": "head_face",
+      "kind": "ambiguous_umbrella",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "figureNote": "PDF labels only Zygomaticus. Do not silently substitute zygomaticus major or minor; resolve intended anatomy and display an explicit group or appropriately scoped question.",
+      "mappingStatus": "ambiguous",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "head",
+          "terminology"
+        ],
+        "status": "ambiguous",
+        "note": "Figure 6.22 uses an umbrella label. The major and minor meshes are distinct; the intended assessed scope is unresolved.",
+        "candidates": [
+          {
+            "name": "Left zygomaticus major",
+            "layer": "superficial muscles",
+            "side": "left",
+            "source": "Z-Anatomy"
+          },
+          {
+            "name": "Left zygomaticus minor",
+            "layer": "superficial muscles",
+            "side": "left",
+            "source": "Z-Anatomy"
+          },
+          {
+            "name": "Right zygomaticus major",
+            "layer": "superficial muscles",
+            "side": "right",
+            "source": "Z-Anatomy"
+          },
+          {
+            "name": "Right zygomaticus minor",
+            "layer": "superficial muscles",
+            "side": "right",
+            "source": "Z-Anatomy"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+        "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/part/LAEN/TAH29056%20P3F%20EN.htm"
+      ],
+      "reviewState": "blocked",
+      "mappingFingerprint": "38420f27d12761091692ba9b0494b664e48e5dc5bd765639745422afe9287690",
+      "captureValid": false
+    },
+    {
+      "id": "orbicularis_oris",
+      "name": "Orbicularis oris",
+      "textbookLabels": [
+        "Orbicularis oris"
+      ],
+      "region": "head_face",
+      "kind": "individual",
+      "laterality": "midline ring (two model halves)",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "head"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Orbicularis oris",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left orbicularis oris",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "Z-Anatomy"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right orbicularis oris",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "Z-Anatomy"
+                }
+              ]
+            }
+          }
+        ],
+        "note": "Écorché uses two separately labeled sides. Review each side and the complete oral ring in Both sides."
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "33616ea6ea5acf91080d1fef59b59ef2c3299a5daa0563c190826100d5e9ef86",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/orbicularis_oris.jpg",
+        "sha256": "105729ce4a035305d1712a9983dc8ae6aaefcd458b76d4fad4cdfcf9f6e4f49c",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "occipitalis",
+      "name": "Occipitalis",
+      "textbookLabels": [
+        "Occipitalis"
+      ],
+      "region": "head_face",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "figureNote": "No obvious occipitalis or occipit- entry appeared in the checked Écorché 2026-11-11 structure list. Verify by fresh inspection; if truly absent source another licensable accurate asset, never invent anatomy.",
+      "mappingStatus": "missing",
+      "mapping": {
+        "initialView": "posterior",
+        "references": [
+          "head",
+          "terminology",
+          "bodyparts3d",
+          "zanatomy"
+        ],
+        "status": "missing",
+        "note": "No occipital belly of occipitofrontalis in the pinned asset. Occipital bone and deep suboccipital muscles are different structures.",
+        "candidates": []
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+        "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/part/LAEN/TAH29056%20P3F%20EN.htm",
+        "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/README_e.html",
+        "https://zenodo.org/records/4953712"
+      ],
+      "reviewState": "blocked",
+      "mappingFingerprint": "dcf11a17989cec60617a50d8a5981fc1233f835900896e72a7519cee685d573d",
+      "captureValid": false
+    },
+    {
+      "id": "platysma",
+      "name": "Platysma",
+      "textbookLabels": [
+        "Platysma"
+      ],
+      "region": "neck",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "missing",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "head",
+          "bodyparts3d",
+          "bodyexplorer"
+        ],
+        "status": "missing",
+        "note": "No Platysma mesh in the pinned asset. The BodyParts3D catalog lists separate left and right OBJ candidates that still need alignment and visual review.",
+        "candidates": []
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+        "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/README_e.html",
+        "https://github.com/JohanBellander/BodyExplorer/blob/7d04bf3c4de2bd9cb234dd51d7e6857c099afafd/public/mesh_mapping.json"
+      ],
+      "reviewState": "blocked",
+      "mappingFingerprint": "519b4e763db5beef8270d9283ee2c3da80b577555cbe1877eaa297e4aa869977",
+      "captureValid": false
+    },
+    {
+      "id": "sternocleidomastoid",
+      "name": "Sternocleidomastoid",
+      "textbookLabels": [
+        "Sternocleidomastoid"
+      ],
+      "region": "neck",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        },
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "head"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Sternocleidomastoid",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left sternocleidomastoid",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA13409"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right sternocleidomastoid",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA13408"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "79d22936b4300d782428687433bcdb9b4691b1152c38c17d6c4c4cf3b0cb7964",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/sternocleidomastoid.jpg",
+        "sha256": "a848f840335a34542372926f55eb6a36b785129b615a9ea379de873fd0dea698",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "trapezius",
+      "name": "Trapezius",
+      "textbookLabels": [
+        "Trapezius"
+      ],
+      "region": "shoulder_back",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        },
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "posterior",
+        "references": [
+          "shoulder"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Descending part",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Descending part of left trapezius",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA33587"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Descending part of right trapezius",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA33586"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Transverse part",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Transverse part of left trapezius",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA33585"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Transverse part of right trapezius",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA33584"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Ascending part",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Ascending part of left trapezius",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA33583"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Ascending part of right trapezius",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA33581"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "328f7adaeb44ee3c681e8494ee157725ea098586ffe13c55dc4abe2054d60d85",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/trapezius.jpg",
+        "sha256": "0b3b202b7a0c5c836d5e73e96b494d4f46a3680e7330ed0dda1db6090c3c12ae",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "deltoid",
+      "name": "Deltoid",
+      "textbookLabels": [
+        "Deltoid"
+      ],
+      "region": "shoulder_back",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        },
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterolateral",
+        "references": [
+          "shoulder"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Clavicular part",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Clavicular part of left deltoid",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA34681"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Clavicular part of right deltoid",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA34680"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Acromial part",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Acromial part of left deltoid",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA34683"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Acromial part of right deltoid",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA34682"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Spinal part",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Spinal part of left deltoid",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA34685"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Spinal part of right deltoid",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA34684"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "2d7ed12bfe545f3fc7acb4a7b675cb56cf1c916709b4882c84959847a7199213",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/deltoid.jpg",
+        "sha256": "2719315ef69c433d950b1b10a3c7a63179b53fd8d1aa67b3c9677c043decc2c0",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "latissimus_dorsi",
+      "name": "Latissimus dorsi",
+      "textbookLabels": [
+        "Latissimus dorsi"
+      ],
+      "region": "shoulder_back",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "posterolateral",
+        "references": [
+          "shoulder"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Latissimus dorsi",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left latissimus dorsi",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "Z-Anatomy"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right latissimus dorsi",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "Z-Anatomy"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "245d2a2e644eb6ed208a6a735e921d6222f305449e61d27c0dfa174c6ec21642",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/latissimus_dorsi.jpg",
+        "sha256": "2479abdaebe339f09119f55ff35798aff0d38f09f26e2e5ce9cabb7e607d311a",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "pectoralis_minor",
+      "name": "Pectoralis minor",
+      "textbookLabels": [
+        "Pectoralis minor"
+      ],
+      "region": "thorax",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "thorax"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Pectoralis minor",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left pectoralis minor",
+                  "layer": "deep muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA13376"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right pectoralis minor",
+                  "layer": "deep muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA13375"
+                }
+              ]
+            }
+          }
+        ],
+        "hide": {
+          "left": [
+            "Abdominal part of left pectoralis major",
+            "Clavicular part of left pectoralis major",
+            "Sternocostal part of left pectoralis major"
+          ],
+          "right": [
+            "Abdominal part of right pectoralis major",
+            "Clavicular part of right pectoralis major",
+            "Sternocostal part of right pectoralis major"
+          ]
+        }
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "88c85aed8f35fc026712631a0b10505c0eebd22563d461b5c17701b191905d10",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/pectoralis_minor.jpg",
+        "sha256": "22c4bf66c0a4c6ee00e398d37aeb571adea6ebdf30dd695bbdbcbfa09a3164aa",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "pectoralis_major",
+      "name": "Pectoralis major",
+      "textbookLabels": [
+        "Pectoralis major"
+      ],
+      "region": "thorax",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "thorax"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Clavicular part",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Clavicular part of left pectoralis major",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA34691"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Clavicular part of right pectoralis major",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA34690"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Sternocostal part",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Sternocostal part of left pectoralis major",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA79980"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Sternocostal part of right pectoralis major",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA79979"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Abdominal part",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Abdominal part of left pectoralis major",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA45875"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Abdominal part of right pectoralis major",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA45874"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "25dd9249f12f67135277510cdbd00dbd511d3d235f93958f7dbd8da758b54520",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/pectoralis_major.jpg",
+        "sha256": "cee34ee0daf98f31362882f6910c48ec4ebe89c30d67bff5a0e3f7962f35e9d7",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "serratus_anterior",
+      "name": "Serratus anterior",
+      "textbookLabels": [
+        "Serratus anterior"
+      ],
+      "region": "thorax",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterolateral",
+        "references": [
+          "thorax"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Serratus anterior",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left serratus anterior",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA13399"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right serratus anterior",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA13398"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "5fd2c760c736d9dbb3c6ec88255053c84fb1759f72823829ebab6d60721ab71d",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/serratus_anterior.jpg",
+        "sha256": "e9265bc4e7dea9f6519804635f82291e8bf42e9c01f972d5faaf191bc10b96e6",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "intercostals",
+      "name": "Intercostals",
+      "textbookLabels": [
+        "Intercostals"
+      ],
+      "region": "thorax",
+      "kind": "muscle_group",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "figureNote": "PDF gives a group label. Do not assume all intercostal layers are represented by an asset; audit component coverage.",
+      "mappingStatus": "partial",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "thorax",
+          "bodyparts3d",
+          "bodyexplorer"
+        ],
+        "status": "partial",
+        "note": "The single external intercostal node is tagged midline but its decoded bounds are entirely on the model’s left. Internal and innermost layers and opposite-side geometry are absent from the pin.",
+        "candidates": [
+          {
+            "name": "External intercostal muscle",
+            "layer": "deep muscles",
+            "side": "midline",
+            "source": "BodyParts3D",
+            "fma": "FMA9756"
+          }
+        ],
+        "requiredComponents": [
+          "External intercostals",
+          "Internal intercostals",
+          "Innermost intercostals"
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
+        "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/README_e.html",
+        "https://github.com/JohanBellander/BodyExplorer/blob/7d04bf3c4de2bd9cb234dd51d7e6857c099afafd/public/mesh_mapping.json"
+      ],
+      "reviewState": "blocked",
+      "mappingFingerprint": "0e255ab7df292fcd9195523449e91b6e4989ee525f3e1fa58b018e71f7f63551",
+      "captureValid": false
+    },
+    {
+      "id": "triceps_brachii",
+      "name": "Triceps brachii",
+      "textbookLabels": [
+        "Triceps brachii"
+      ],
+      "region": "upper_arm",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        },
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "posterolateral",
+        "references": [
+          "upper"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Long head",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Long head of left triceps brachii",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA37700"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Long head of right triceps brachii",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA37699"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Lateral head",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Lateral head of left triceps brachii",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA37698"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Lateral head of right triceps brachii",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA37697"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Medial head",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Medial head of left triceps brachii",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA37696"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Medial head of right triceps brachii",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA37695"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "78dccf82c5cc6a25c138b4965247f286c589ee62574b8f0714f026214e8a70a6",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/triceps_brachii.jpg",
+        "sha256": "3d6838080980fe335c92ab265c27e391e0db402d92abd319dc84f0e6bb3ec208",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "biceps_brachii",
+      "name": "Biceps brachii",
+      "textbookLabels": [
+        "Biceps brachii"
+      ],
+      "region": "upper_arm",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "upper"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Long head",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Long head of left biceps brachii",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA37687"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Long head of right biceps brachii",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA37686"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Short head",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Short head of left biceps brachii",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA37685"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Short head of right biceps brachii",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA37684"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "323ce6e3c700de003749adcbc9603e0c407eed7e0b6751b13cfb3cc0492bf6f0",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/biceps_brachii.jpg",
+        "sha256": "64a899d0b0a12923443b096a99882846b506a257d3a8d608cf32ddad6b29a61c",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "brachialis",
+      "name": "Brachialis",
+      "textbookLabels": [
+        "Brachialis"
+      ],
+      "region": "upper_arm",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        },
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterolateral",
+        "references": [
+          "upper"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Brachialis",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left brachialis",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA37669"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right brachialis",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA37668"
+                }
+              ]
+            }
+          }
+        ],
+        "hide": {
+          "left": [
+            "Long head of left biceps brachii",
+            "Short head of left biceps brachii"
+          ],
+          "right": [
+            "Long head of right biceps brachii",
+            "Short head of right biceps brachii"
+          ]
+        }
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "d00362aca5641752b27f4a66222afdc1247e01d894a20d6e6a8a516819bf8f8e",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/brachialis.jpg",
+        "sha256": "0e984d67e98ea28005a2f6d67c26980a86ff309fc08d490c6251718f3f73724b",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "brachioradialis",
+      "name": "Brachioradialis",
+      "textbookLabels": [
+        "Brachioradialis"
+      ],
+      "region": "forearm",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        },
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterolateral",
+        "references": [
+          "upper"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Brachioradialis",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left brachioradialis",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38487"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right brachioradialis",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38486"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "c5bfc6837bb278aa7991343c02516aa4ec922386bc5174e92ca289558e6455cb",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/brachioradialis.jpg",
+        "sha256": "3f7db21246008843e232daf9c3faabe38cffbbd526f65f6701c118b810eb2f51",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "flexor_carpi_radialis",
+      "name": "Flexor carpi radialis",
+      "textbookLabels": [
+        "Flexor carpi radialis"
+      ],
+      "region": "forearm",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "upper"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Flexor carpi radialis",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left flexor carpi radialis",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38461"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right flexor carpi radialis",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38460"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "7f8c783835b9f5a3f89e1e6f6c6b8271c3fe680b99cb32c6adc2e6bb2b284db7",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/flexor_carpi_radialis.jpg",
+        "sha256": "1fc0119a6663169e9a95075a7366a2ca1b96ad3f22d4c81ae3746c3d1478dd6c",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "extensor_carpi_radialis_longus",
+      "name": "Extensor carpi radialis longus",
+      "textbookLabels": [
+        "Extensor carpi radialis longus"
+      ],
+      "region": "forearm",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "posterolateral",
+        "references": [
+          "upper"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Extensor carpi radialis longus",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left extensor carpi radialis longus",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38496"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right extensor carpi radialis longus",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38495"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "aab522f351b4848443260930e354babff205a762677d95e384058bcc4ef3886d",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/extensor_carpi_radialis_longus.jpg",
+        "sha256": "77233870b4d1b75a3de17e00b19bf9a583d9f6fb74c5416644f989a3014fc461",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "flexor_carpi_ulnaris",
+      "name": "Flexor carpi ulnaris",
+      "textbookLabels": [
+        "Flexor carpi ulnaris"
+      ],
+      "region": "forearm",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "posterior",
+        "references": [
+          "upper"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Humeral head",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Humeral head of left flexor carpi ulnaris",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38618"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Humeral head of right flexor carpi ulnaris",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38617"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Ulnar head",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Ulnar head of left flexor carpi ulnaris",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38620"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Ulnar head of right flexor carpi ulnaris",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38619"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "22da935c9b2e76763ca2fbc79816333f1751d74d6950550246cb9966dbee553d",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/flexor_carpi_ulnaris.jpg",
+        "sha256": "1984a0dd6e669d4a1fbead38575abe614cc10965f817d21b7db0e76eb0f88fd2",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "extensor_carpi_ulnaris",
+      "name": "Extensor carpi ulnaris",
+      "textbookLabels": [
+        "Extensor carpi ulnaris"
+      ],
+      "region": "forearm",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "posterolateral",
+        "references": [
+          "upper"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Extensor carpi ulnaris",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left extensor carpi ulnaris",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38508"
+                },
+                {
+                  "name": "Left extensor carpi ulnaris (2)",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38508"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right extensor carpi ulnaris",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38507"
+                },
+                {
+                  "name": "Right extensor carpi ulnaris (2)",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38507"
+                }
+              ]
+            }
+          }
+        ],
+        "note": "Includes both named pieces per side with the same sided FMA identifier; inspect the smaller piece separately."
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "aa42148a7bbdb34f3f505b9f8208f72bd9b65b7773c77b4bbb9bb895365f494c",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/extensor_carpi_ulnaris.jpg",
+        "sha256": "c2774e637313e5530d41aee7ffaaf07b79226ebda19e3648f45609853a2735ce",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "extensor_digitorum",
+      "name": "Extensor digitorum",
+      "textbookLabels": [
+        "Extensor digitorum"
+      ],
+      "region": "forearm",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "figureNote": "Forearm muscle distinct from lower-leg extensor digitorum longus; do not merge.",
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "posterior",
+        "references": [
+          "upper"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Extensor digitorum",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left extensor digitorum",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38502"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right extensor digitorum",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38501"
+                }
+              ]
+            }
+          }
+        ],
+        "note": "Forearm extensor digitorum. The lower-leg extensor digitorum longus is a separate target."
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "6ca59701fe24de75855c2f3bf5a72f3c320a455a35150c2a3260ab7287537968",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/extensor_digitorum.jpg",
+        "sha256": "a4f4df03092a1feb8358c92bb5cdb8125121770270ae57ed82edbc04de91a33c",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "rectus_abdominis",
+      "name": "Rectus abdominis",
+      "textbookLabels": [
+        "Rectus abdominis"
+      ],
+      "region": "abdomen",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "thorax"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Rectus abdominis",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left rectus abdominis",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "Z-Anatomy"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right rectus abdominis",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "Z-Anatomy"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "9d4d78cddf291a20bd211697adb10f12463b94f5f8399cff5e8b5e6b56ca8022",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/rectus_abdominis.jpg",
+        "sha256": "cf7c4945c3bab48e331d380b0bc9b3b04a7b6d43283eb41e51dd2672081f8388",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "external_oblique",
+      "name": "External oblique",
+      "textbookLabels": [
+        "External oblique"
+      ],
+      "region": "abdomen",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "thorax"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "External oblique",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left external oblique",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA13337"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right external oblique",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA13336"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "caab6f663ea78de6847277aeac66adf6b2fc7d4e33e0ee2acb22e0419b0ee00d",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/external_oblique.jpg",
+        "sha256": "34762f29689d4b628971042741b652673bf2ee68087118bfbfeca1f273eebf7d",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "internal_oblique",
+      "name": "Internal oblique",
+      "textbookLabels": [
+        "Internal oblique"
+      ],
+      "region": "abdomen",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "thorax"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Internal oblique",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left internal oblique",
+                  "layer": "deep muscles",
+                  "side": "left",
+                  "source": "Z-Anatomy"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right internal oblique",
+                  "layer": "deep muscles",
+                  "side": "right",
+                  "source": "Z-Anatomy"
+                }
+              ]
+            }
+          }
+        ],
+        "hide": {
+          "left": [
+            "Left external oblique"
+          ],
+          "right": [
+            "Right external oblique"
+          ]
+        }
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "17f23c683120bc961a00273ded3c4ddab85f6495bf4360198d2117772a88f21f",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/internal_oblique.jpg",
+        "sha256": "04efffd9921aab14c518cd1df5e93e663eea0cdcbc2d1375a2d46ffce299539f",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "transversus_abdominis",
+      "name": "Transversus abdominis",
+      "textbookLabels": [
+        "Transversus abdominis"
+      ],
+      "region": "abdomen",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "thorax"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Transversus abdominis",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left transversus abdominis",
+                  "layer": "deep muscles",
+                  "side": "left",
+                  "source": "Z-Anatomy"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right transversus abdominis",
+                  "layer": "deep muscles",
+                  "side": "right",
+                  "source": "Z-Anatomy"
+                }
+              ]
+            }
+          }
+        ],
+        "hide": {
+          "left": [
+            "Left external oblique",
+            "Left internal oblique"
+          ],
+          "right": [
+            "Right external oblique",
+            "Right internal oblique"
+          ]
+        }
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "5a206723e588c4d32c590435b37aea3447581a532f0704846c0b614fad626373",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/transversus_abdominis.jpg",
+        "sha256": "0c07bcb50c49e7df04765426b4222f32ccc26b4636498b2b6c094d73126c609d",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "iliopsoas",
+      "name": "Iliopsoas",
+      "textbookLabels": [
+        "Iliopsoas"
+      ],
+      "region": "hip_thigh",
+      "kind": "composite",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "figureNote": "Compound muscle group; audit iliacus and psoas major components before displaying the label.",
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "lower",
+          "keyTerms"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Iliacus",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left iliacus",
+                  "layer": "deep muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22323"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right iliacus",
+                  "layer": "deep muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22322"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Psoas major",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left psoas major",
+                  "layer": "deep muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22343"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right psoas major",
+                  "layer": "deep muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22342"
+                }
+              ]
+            }
+          }
+        ],
+        "note": "Two-component scope follows iliacus and psoas major. Psoas minor is outside this definition.",
+        "hide": {
+          "left": [
+            "Left rectus abdominis",
+            "Left external oblique",
+            "Left rectus femoris"
+          ],
+          "right": [
+            "Right rectus abdominis",
+            "Right external oblique",
+            "Right rectus femoris"
+          ]
+        }
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-key-terms"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "7943ba3a92ff6caa82839d43bb1910c1f784a6d6a2759dbc5a927351eef66d2b",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/iliopsoas.jpg",
+        "sha256": "c6b204b328c6bb8706821297d3623b76ba6353d9bc6144461b59dbc4fc6b1ee4",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "sartorius",
+      "name": "Sartorius",
+      "textbookLabels": [
+        "Sartorius"
+      ],
+      "region": "hip_thigh",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "lower"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Sartorius",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left sartorius",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22355"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right sartorius",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22354"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "444526526a37f6615a4023dd3786bfc8b2907457935ae9b51ea953b0f5d54fb5",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/sartorius.jpg",
+        "sha256": "073b9b6a8677f901b7d59213ccefd6a699b89c2cf8d77c7b587c71f2de03d694",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "adductor_muscles",
+      "name": "Adductor muscles",
+      "textbookLabels": [
+        "Adductor muscles",
+        "Adductor muscle"
+      ],
+      "region": "hip_thigh",
+      "kind": "muscle_group",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        },
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "figureNote": "PDF uses plural on page 1 and singular on page 2. The muscle group, not an unspecified individual adductor, is the target.",
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "medial-anterior",
+        "references": [
+          "lower",
+          "minimus"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Adductor longus",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left adductor longus",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22457"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right adductor longus",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22456"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Adductor brevis",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left adductor brevis",
+                  "layer": "deep muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22454"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right adductor brevis",
+                  "layer": "deep muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22452"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Adductor magnus including model’s separate minimus",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left adductor magnus",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22460"
+                },
+                {
+                  "name": "Left adductor minimus",
+                  "layer": "deep muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA43887"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right adductor magnus",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22459"
+                },
+                {
+                  "name": "Right adductor minimus",
+                  "layer": "deep muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA43886"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Gracilis",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left gracilis",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA43884"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right gracilis",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA43883"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Pectineus",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left pectineus",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22451"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right pectineus",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22450"
+                }
+              ]
+            }
+          }
+        ],
+        "note": "Working definition follows the five medial thigh adductors in OpenStax. The source splits out adductor minimus, treated here as a component of magnus. The PDF does not enumerate members; review scope and overlap before approval."
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+        "https://pubmed.ncbi.nlm.nih.gov/32896868/"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "55918290200ff22a30bd079d776fdc01092d2ddac6248fb2c9564e03bb2aec72",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/adductor_muscles.jpg",
+        "sha256": "9221344332a17b78d3e2fef3a238a34badef044125fff447c75dacca10fd8b20",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "rectus_femoris",
+      "name": "Rectus femoris",
+      "textbookLabels": [
+        "Rectus femoris"
+      ],
+      "region": "hip_thigh",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "lower"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Rectus femoris",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left rectus femoris",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38929"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right rectus femoris",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38928"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "137b9f5f9bcee22f2e91a5b1eca3ea01e89d5658de75dead9b24df8239b4b837",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/rectus_femoris.jpg",
+        "sha256": "c88a9628ea6cce4109732c2b3fafa6aa722485c238f0cb2a1ab2c2b44bc0cfa4",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "vastus_lateralis",
+      "name": "Vastus lateralis",
+      "textbookLabels": [
+        "Vastus lateralis"
+      ],
+      "region": "hip_thigh",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "lower"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Vastus lateralis",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left vastus lateralis",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38931"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right vastus lateralis",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38930"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "2d89881cd26bedf4fc6cf3a008285465933bcac988425814788450e900479c51",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/vastus_lateralis.jpg",
+        "sha256": "1df863c716957c9425ea6d08292f6d509cb3a3a14d881a7d636b5669e29b3eb2",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "vastus_medialis",
+      "name": "Vastus medialis",
+      "textbookLabels": [
+        "Vastus medialis"
+      ],
+      "region": "hip_thigh",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "lower"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Vastus medialis",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left vastus medialis",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38933"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right vastus medialis",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38932"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "b947922f7dfa62c5fb2c40ae6d2a3265f8b2b3c5479293c6ac945ececce4c644",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/vastus_medialis.jpg",
+        "sha256": "657df3b4ab7283f200a969c8f99ca5b58763dbd03e48156c95f8f2ab02ec23c9",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "vastus_intermedius",
+      "name": "Vastus intermedius",
+      "textbookLabels": [
+        "Vastus intermedius"
+      ],
+      "region": "hip_thigh",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "figureNote": "Explicitly listed on page 1 but figure says not shown because deep to rectus femoris. Must be visualized with a verified 3D deep-layer view.",
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "lower"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Vastus intermedius",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left vastus intermedius",
+                  "layer": "deep muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38935"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right vastus intermedius",
+                  "layer": "deep muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA38934"
+                }
+              ]
+            }
+          }
+        ],
+        "note": "Figure 6.22 lists this target but does not show it. The review view removes rectus femoris and approaches the anterior thigh.",
+        "hide": {
+          "left": [
+            "Left rectus femoris"
+          ],
+          "right": [
+            "Right rectus femoris"
+          ]
+        }
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "8801ba07a6d7b29889b9acc1c2a9af4bb12e5a4b66b4934b9eb75c93c29ad8e0",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/vastus_intermedius.jpg",
+        "sha256": "3e44ea6b198f1be0abd2dae63d36e58f6ff2d657bd965ed63e50b12052249610",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "gluteus_medius",
+      "name": "Gluteus medius",
+      "textbookLabels": [
+        "Gluteus medius"
+      ],
+      "region": "hip_thigh",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "posterolateral",
+        "references": [
+          "lower"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Gluteus medius",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left gluteus medius",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22331"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right gluteus medius",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22330"
+                }
+              ]
+            }
+          }
+        ],
+        "hide": {
+          "left": [
+            "Left gluteus maximus"
+          ],
+          "right": [
+            "Right gluteus maximus"
+          ]
+        }
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "e3aa2e557bd1f8dccf94da70ffe4a5046cc7c26974b7924032f93e79b32c98c9",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/gluteus_medius.jpg",
+        "sha256": "fb1201411544e0d5194860e1d845abcd6ffcdefedca4ee3fa76c1ae2ad40d11b",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "gluteus_maximus",
+      "name": "Gluteus maximus",
+      "textbookLabels": [
+        "Gluteus maximus"
+      ],
+      "region": "hip_thigh",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "posterolateral",
+        "references": [
+          "lower"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Gluteus maximus",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left gluteus maximus",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22329"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right gluteus maximus",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22328"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "95909615feccdcdab5654f8c858bea2561e338ddeb9d89c849ad721e670d5c71",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/gluteus_maximus.jpg",
+        "sha256": "6081ee38dca426d6a042c6eb98303855a3e3815a4a80e7097d32791444776bed",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "biceps_femoris",
+      "name": "Biceps femoris",
+      "textbookLabels": [
+        "Biceps femoris"
+      ],
+      "region": "hip_thigh",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "posterolateral",
+        "references": [
+          "lower"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Long head",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Long head of left biceps femoris",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA45889"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Long head of right biceps femoris",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA45888"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Short head",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Short head of left biceps femoris",
+                  "layer": "deep muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA45892"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Short head of right biceps femoris",
+                  "layer": "deep muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA45891"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "bdd6ec44fecf6948f571ffde72737e880f312e9224002220defea61c04dca68c",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/biceps_femoris.jpg",
+        "sha256": "645d3e5f0f1ac5914f72314c3ab0d41fe7abf16f3e5d8b569220b2693a526ddf",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "semitendinosus",
+      "name": "Semitendinosus",
+      "textbookLabels": [
+        "Semitendinosus"
+      ],
+      "region": "hip_thigh",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "posterior",
+        "references": [
+          "lower"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Semitendinosus",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left semitendinosus",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22359"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right semitendinosus",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22358"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "eaf42543d6a1ebb342f6798f115b5d9f2db8f7d93d7ebb7374c4cc00e482b732",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/semitendinosus.jpg",
+        "sha256": "3831ad80ce0519c70ca67a898aa4493f19ab13181e518ce713e07c3a79065926",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "semimembranosus",
+      "name": "Semimembranosus",
+      "textbookLabels": [
+        "Semimembranosus"
+      ],
+      "region": "hip_thigh",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "posteromedial",
+        "references": [
+          "lower"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Semimembranosus",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left semimembranosus",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22449"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right semimembranosus",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22448"
+                }
+              ]
+            }
+          }
+        ],
+        "hide": {
+          "left": [
+            "Left semitendinosus"
+          ],
+          "right": [
+            "Right semitendinosus"
+          ]
+        }
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "5bb833a295c20409e0b6670e33e99033e657bc844492b356349407e385a322c2",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/semimembranosus.jpg",
+        "sha256": "eea616e45eb021ed39e741cbfc4e4b4b54ce4853a1e638fc3fa8687304a7edfd",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "fibularis_longus",
+      "name": "Fibularis longus",
+      "textbookLabels": [
+        "Fibularis longus"
+      ],
+      "region": "lower_leg",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        },
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "lateral",
+        "references": [
+          "lower"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Fibularis longus",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left fibularis longus",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22553"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right fibularis longus",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22552"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "fa3dc9c6f576b6864d5f1d87624a8675dd1e580554f6754aaf099ef2c4356927",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/fibularis_longus.jpg",
+        "sha256": "bb8ef59fd2b9a4517e8da3a1d490922ac5f0d6007e1bd298b060e540ac16759c",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "extensor_digitorum_longus",
+      "name": "Extensor digitorum longus",
+      "textbookLabels": [
+        "Extensor digitorum longus"
+      ],
+      "region": "lower_leg",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterolateral",
+        "references": [
+          "lower"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Extensor digitorum longus",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left extensor digitorum longus",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22549"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right extensor digitorum longus",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22548"
+                }
+              ]
+            }
+          }
+        ],
+        "note": "Lower-leg extensor digitorum longus. The forearm extensor digitorum is a separate target."
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "ef6f223dbf6f6b08bb72920ab48aef36d27b367792c23a3c16e8b0712aab0965",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/extensor_digitorum_longus.jpg",
+        "sha256": "b68aef0a7257b9b6f9daa232bd51afdc8a4e539dcb567ac05c039a822bc43535",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "tibialis_anterior",
+      "name": "Tibialis anterior",
+      "textbookLabels": [
+        "Tibialis anterior"
+      ],
+      "region": "lower_leg",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "anterior",
+        "references": [
+          "lower"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Tibialis anterior",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left tibialis anterior",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22545"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right tibialis anterior",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22544"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "c0b11c5df87b6dd3128cbee453e3ade044f52f7b4f328ca32ccd4291f42c7aaa",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/tibialis_anterior.jpg",
+        "sha256": "ed96b732f2c91dca0c4afbc9176500d130d74d3fafb6d1c3454f57fb65fc6660",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "gastrocnemius",
+      "name": "Gastrocnemius",
+      "textbookLabels": [
+        "Gastrocnemius"
+      ],
+      "region": "lower_leg",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        },
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "posterior",
+        "references": [
+          "lower"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Medial head",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Medial head of left gastrocnemius",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA45958"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Medial head of right gastrocnemius",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA45957"
+                }
+              ]
+            }
+          },
+          {
+            "label": "Lateral head",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Lateral head of left gastrocnemius",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA45961"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Lateral head of right gastrocnemius",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA45960"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "43e7e36d78d770e1460c42bdf6c932dfa4485184bc99cdfa0f063b95eb41b833",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/gastrocnemius.jpg",
+        "sha256": "3afc082b0bbd8509fa81c19612fb33a40b876fa3ee54bf85337facca00af8765",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "soleus",
+      "name": "Soleus",
+      "textbookLabels": [
+        "Soleus"
+      ],
+      "region": "lower_leg",
+      "kind": "individual",
+      "laterality": "bilateral",
+      "figures": [
+        {
+          "figure": "6.22",
+          "view": "anterior",
+          "page": 232,
+          "pdfPage": 1,
+          "targetCount": 35
+        },
+        {
+          "figure": "6.23",
+          "view": "posterior",
+          "page": 233,
+          "pdfPage": 2,
+          "targetCount": 21
+        }
+      ],
+      "mappingStatus": "mapped",
+      "mapping": {
+        "initialView": "posterior",
+        "references": [
+          "lower"
+        ],
+        "status": "mapped",
+        "components": [
+          {
+            "label": "Soleus",
+            "meshes": {
+              "left": [
+                {
+                  "name": "Left soleus",
+                  "layer": "superficial muscles",
+                  "side": "left",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22559"
+                }
+              ],
+              "right": [
+                {
+                  "name": "Right soleus",
+                  "layer": "superficial muscles",
+                  "side": "right",
+                  "source": "BodyParts3D",
+                  "fma": "FMA22558"
+                }
+              ]
+            }
+          }
+        ],
+        "note": "Gastrocnemius heads are hidden in the deep review view.",
+        "hide": {
+          "left": [
+            "Medial head of left gastrocnemius",
+            "Lateral head of left gastrocnemius"
+          ],
+          "right": [
+            "Medial head of right gastrocnemius",
+            "Lateral head of right gastrocnemius"
+          ]
+        }
+      },
+      "sources": [
+        "https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+      ],
+      "reviewState": "pending",
+      "mappingFingerprint": "796aee51a3993dd76a12495dedaea0cadbff33c4106985ac6ecb541378d6cb7c",
+      "captureValid": true,
+      "evidence": {
+        "path": "screenshots/anatomy/soleus.jpg",
+        "sha256": "296f11361904dffd5ef85f07cf65c488b04d1948eaf32438f5781c1820cf5505",
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    }
+  ]
+}

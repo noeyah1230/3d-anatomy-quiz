@@ -1,0 +1,338 @@
+{
+  "temporalis": {
+    "mappingFingerprint": "d94e0f0a96b5efc9ea5bb5268d249a3ceffff1bc5b692b0b5719ccfb2670d953",
+    "sha256": "ab9279ae9aaa538d9e7fc67d355e2c08d27d5f6c3d72d859a389f40d25e67010",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "masseter": {
+    "mappingFingerprint": "e347368194f0cfc3bd0fcbaa05ec984b8037d11fb3332549c4e8a7f84f98cd81",
+    "sha256": "cbf65a254dabddb55de39195bf0aa6bf68b14e54a16341faaf1ae8c9712000b2",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "frontalis": {
+    "mappingFingerprint": "6887e84105c78828d8e2454af42db7e2c98ce05a96dc31a5bf1a14f59f109587",
+    "sha256": "ec4af693503b848e0719f132c6a6e0a033a6e50e876d51d4224ca0f2e7e7b398",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "orbicularis_oculi": {
+    "mappingFingerprint": "c3dd1369ca6e3d9ea8e8c5a2f1f68ceca4bde7bda1acee539d5bbfdff8fbf2b8",
+    "sha256": "e91c12e845ff5e8b42e02f7bde589eb816f27f21c8cf1ec62e0e95a979f2932d",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "orbicularis_oris": {
+    "mappingFingerprint": "33616ea6ea5acf91080d1fef59b59ef2c3299a5daa0563c190826100d5e9ef86",
+    "sha256": "105729ce4a035305d1712a9983dc8ae6aaefcd458b76d4fad4cdfcf9f6e4f49c",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "sternocleidomastoid": {
+    "mappingFingerprint": "79d22936b4300d782428687433bcdb9b4691b1152c38c17d6c4c4cf3b0cb7964",
+    "sha256": "a848f840335a34542372926f55eb6a36b785129b615a9ea379de873fd0dea698",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "trapezius": {
+    "mappingFingerprint": "328f7adaeb44ee3c681e8494ee157725ea098586ffe13c55dc4abe2054d60d85",
+    "sha256": "0b3b202b7a0c5c836d5e73e96b494d4f46a3680e7330ed0dda1db6090c3c12ae",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "deltoid": {
+    "mappingFingerprint": "2d7ed12bfe545f3fc7acb4a7b675cb56cf1c916709b4882c84959847a7199213",
+    "sha256": "2719315ef69c433d950b1b10a3c7a63179b53fd8d1aa67b3c9677c043decc2c0",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "latissimus_dorsi": {
+    "mappingFingerprint": "245d2a2e644eb6ed208a6a735e921d6222f305449e61d27c0dfa174c6ec21642",
+    "sha256": "2479abdaebe339f09119f55ff35798aff0d38f09f26e2e5ce9cabb7e607d311a",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "pectoralis_minor": {
+    "mappingFingerprint": "88c85aed8f35fc026712631a0b10505c0eebd22563d461b5c17701b191905d10",
+    "sha256": "22c4bf66c0a4c6ee00e398d37aeb571adea6ebdf30dd695bbdbcbfa09a3164aa",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "pectoralis_major": {
+    "mappingFingerprint": "25dd9249f12f67135277510cdbd00dbd511d3d235f93958f7dbd8da758b54520",
+    "sha256": "cee34ee0daf98f31362882f6910c48ec4ebe89c30d67bff5a0e3f7962f35e9d7",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "serratus_anterior": {
+    "mappingFingerprint": "5fd2c760c736d9dbb3c6ec88255053c84fb1759f72823829ebab6d60721ab71d",
+    "sha256": "e9265bc4e7dea9f6519804635f82291e8bf42e9c01f972d5faaf191bc10b96e6",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "triceps_brachii": {
+    "mappingFingerprint": "78dccf82c5cc6a25c138b4965247f286c589ee62574b8f0714f026214e8a70a6",
+    "sha256": "3d6838080980fe335c92ab265c27e391e0db402d92abd319dc84f0e6bb3ec208",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "biceps_brachii": {
+    "mappingFingerprint": "323ce6e3c700de003749adcbc9603e0c407eed7e0b6751b13cfb3cc0492bf6f0",
+    "sha256": "64a899d0b0a12923443b096a99882846b506a257d3a8d608cf32ddad6b29a61c",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "brachialis": {
+    "mappingFingerprint": "d00362aca5641752b27f4a66222afdc1247e01d894a20d6e6a8a516819bf8f8e",
+    "sha256": "0e984d67e98ea28005a2f6d67c26980a86ff309fc08d490c6251718f3f73724b",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "brachioradialis": {
+    "mappingFingerprint": "c5bfc6837bb278aa7991343c02516aa4ec922386bc5174e92ca289558e6455cb",
+    "sha256": "3f7db21246008843e232daf9c3faabe38cffbbd526f65f6701c118b810eb2f51",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "flexor_carpi_radialis": {
+    "mappingFingerprint": "7f8c783835b9f5a3f89e1e6f6c6b8271c3fe680b99cb32c6adc2e6bb2b284db7",
+    "sha256": "1fc0119a6663169e9a95075a7366a2ca1b96ad3f22d4c81ae3746c3d1478dd6c",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "extensor_carpi_radialis_longus": {
+    "mappingFingerprint": "aab522f351b4848443260930e354babff205a762677d95e384058bcc4ef3886d",
+    "sha256": "77233870b4d1b75a3de17e00b19bf9a583d9f6fb74c5416644f989a3014fc461",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "flexor_carpi_ulnaris": {
+    "mappingFingerprint": "22da935c9b2e76763ca2fbc79816333f1751d74d6950550246cb9966dbee553d",
+    "sha256": "1984a0dd6e669d4a1fbead38575abe614cc10965f817d21b7db0e76eb0f88fd2",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "extensor_carpi_ulnaris": {
+    "mappingFingerprint": "aa42148a7bbdb34f3f505b9f8208f72bd9b65b7773c77b4bbb9bb895365f494c",
+    "sha256": "c2774e637313e5530d41aee7ffaaf07b79226ebda19e3648f45609853a2735ce",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "extensor_digitorum": {
+    "mappingFingerprint": "6ca59701fe24de75855c2f3bf5a72f3c320a455a35150c2a3260ab7287537968",
+    "sha256": "a4f4df03092a1feb8358c92bb5cdb8125121770270ae57ed82edbc04de91a33c",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "rectus_abdominis": {
+    "mappingFingerprint": "9d4d78cddf291a20bd211697adb10f12463b94f5f8399cff5e8b5e6b56ca8022",
+    "sha256": "cf7c4945c3bab48e331d380b0bc9b3b04a7b6d43283eb41e51dd2672081f8388",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "external_oblique": {
+    "mappingFingerprint": "caab6f663ea78de6847277aeac66adf6b2fc7d4e33e0ee2acb22e0419b0ee00d",
+    "sha256": "34762f29689d4b628971042741b652673bf2ee68087118bfbfeca1f273eebf7d",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "internal_oblique": {
+    "mappingFingerprint": "17f23c683120bc961a00273ded3c4ddab85f6495bf4360198d2117772a88f21f",
+    "sha256": "04efffd9921aab14c518cd1df5e93e663eea0cdcbc2d1375a2d46ffce299539f",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "transversus_abdominis": {
+    "mappingFingerprint": "5a206723e588c4d32c590435b37aea3447581a532f0704846c0b614fad626373",
+    "sha256": "0c07bcb50c49e7df04765426b4222f32ccc26b4636498b2b6c094d73126c609d",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "iliopsoas": {
+    "mappingFingerprint": "7943ba3a92ff6caa82839d43bb1910c1f784a6d6a2759dbc5a927351eef66d2b",
+    "sha256": "c6b204b328c6bb8706821297d3623b76ba6353d9bc6144461b59dbc4fc6b1ee4",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "sartorius": {
+    "mappingFingerprint": "444526526a37f6615a4023dd3786bfc8b2907457935ae9b51ea953b0f5d54fb5",
+    "sha256": "073b9b6a8677f901b7d59213ccefd6a699b89c2cf8d77c7b587c71f2de03d694",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "adductor_muscles": {
+    "mappingFingerprint": "55918290200ff22a30bd079d776fdc01092d2ddac6248fb2c9564e03bb2aec72",
+    "sha256": "9221344332a17b78d3e2fef3a238a34badef044125fff447c75dacca10fd8b20",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "rectus_femoris": {
+    "mappingFingerprint": "137b9f5f9bcee22f2e91a5b1eca3ea01e89d5658de75dead9b24df8239b4b837",
+    "sha256": "c88a9628ea6cce4109732c2b3fafa6aa722485c238f0cb2a1ab2c2b44bc0cfa4",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "vastus_lateralis": {
+    "mappingFingerprint": "2d89881cd26bedf4fc6cf3a008285465933bcac988425814788450e900479c51",
+    "sha256": "1df863c716957c9425ea6d08292f6d509cb3a3a14d881a7d636b5669e29b3eb2",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "vastus_medialis": {
+    "mappingFingerprint": "b947922f7dfa62c5fb2c40ae6d2a3265f8b2b3c5479293c6ac945ececce4c644",
+    "sha256": "657df3b4ab7283f200a969c8f99ca5b58763dbd03e48156c95f8f2ab02ec23c9",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "vastus_intermedius": {
+    "mappingFingerprint": "8801ba07a6d7b29889b9acc1c2a9af4bb12e5a4b66b4934b9eb75c93c29ad8e0",
+    "sha256": "3e44ea6b198f1be0abd2dae63d36e58f6ff2d657bd965ed63e50b12052249610",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "gluteus_medius": {
+    "mappingFingerprint": "e3aa2e557bd1f8dccf94da70ffe4a5046cc7c26974b7924032f93e79b32c98c9",
+    "sha256": "fb1201411544e0d5194860e1d845abcd6ffcdefedca4ee3fa76c1ae2ad40d11b",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "gluteus_maximus": {
+    "mappingFingerprint": "95909615feccdcdab5654f8c858bea2561e338ddeb9d89c849ad721e670d5c71",
+    "sha256": "6081ee38dca426d6a042c6eb98303855a3e3815a4a80e7097d32791444776bed",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "biceps_femoris": {
+    "mappingFingerprint": "bdd6ec44fecf6948f571ffde72737e880f312e9224002220defea61c04dca68c",
+    "sha256": "645d3e5f0f1ac5914f72314c3ab0d41fe7abf16f3e5d8b569220b2693a526ddf",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "semitendinosus": {
+    "mappingFingerprint": "eaf42543d6a1ebb342f6798f115b5d9f2db8f7d93d7ebb7374c4cc00e482b732",
+    "sha256": "3831ad80ce0519c70ca67a898aa4493f19ab13181e518ce713e07c3a79065926",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "semimembranosus": {
+    "mappingFingerprint": "5bb833a295c20409e0b6670e33e99033e657bc844492b356349407e385a322c2",
+    "sha256": "eea616e45eb021ed39e741cbfc4e4b4b54ce4853a1e638fc3fa8687304a7edfd",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "fibularis_longus": {
+    "mappingFingerprint": "fa3dc9c6f576b6864d5f1d87624a8675dd1e580554f6754aaf099ef2c4356927",
+    "sha256": "bb8ef59fd2b9a4517e8da3a1d490922ac5f0d6007e1bd298b060e540ac16759c",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "extensor_digitorum_longus": {
+    "mappingFingerprint": "ef6f223dbf6f6b08bb72920ab48aef36d27b367792c23a3c16e8b0712aab0965",
+    "sha256": "b68aef0a7257b9b6f9daa232bd51afdc8a4e539dcb567ac05c039a822bc43535",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "tibialis_anterior": {
+    "mappingFingerprint": "c0b11c5df87b6dd3128cbee453e3ade044f52f7b4f328ca32ccd4291f42c7aaa",
+    "sha256": "ed96b732f2c91dca0c4afbc9176500d130d74d3fafb6d1c3454f57fb65fc6660",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "gastrocnemius": {
+    "mappingFingerprint": "43e7e36d78d770e1460c42bdf6c932dfa4485184bc99cdfa0f063b95eb41b833",
+    "sha256": "3afc082b0bbd8509fa81c19612fb33a40b876fa3ee54bf85337facca00af8765",
+    "sides": [
+      "left",
+      "right"
+    ]
+  },
+  "soleus": {
+    "mappingFingerprint": "796aee51a3993dd76a12495dedaea0cadbff33c4106985ac6ecb541378d6cb7c",
+    "sha256": "296f11361904dffd5ef85f07cf65c488b04d1948eaf32438f5781c1820cf5505",
+    "sides": [
+      "left",
+      "right"
+    ]
+  }
+}

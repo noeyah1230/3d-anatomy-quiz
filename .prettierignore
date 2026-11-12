@@ -5,3 +5,6 @@ test-results/
 package-lock.json
 public/models/
 src/data/scope/muscle_scope_v1.json
+docs/MUSCLE_COVERAGE_V1.md
+docs/MUSCLE_COVERAGE_V1.json
+docs/screenshots/anatomy/captures.json

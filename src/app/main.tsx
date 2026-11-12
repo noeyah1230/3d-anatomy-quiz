@@ -1,10 +1,15 @@
-import { StrictMode } from 'react';
+import { lazy, StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import '@fontsource-variable/inter/wght.css';
 import '@fontsource/instrument-serif/400.css';
 import { App } from './App';
 import { ErrorBoundary } from './ErrorBoundary';
 import '../styles/app.css';
+
+const ReviewApp =
+  import.meta.env.DEV && new URLSearchParams(location.search).has('review')
+    ? lazy(() => import('../features/anatomy/review/ReviewApp'))
+    : null;
 
 const root = document.getElementById('root');
 if (!root) throw new Error('App root is missing.');
@@ -21,7 +26,13 @@ createRoot(root).render(
         </main>
       )}
     >
-      <App />
+      {ReviewApp ? (
+        <Suspense fallback={<p>Loading anatomy review…</p>}>
+          <ReviewApp />
+        </Suspense>
+      ) : (
+        <App />
+      )}
     </ErrorBoundary>
   </StrictMode>,
 );

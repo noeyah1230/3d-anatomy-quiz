@@ -4,7 +4,7 @@
 
 The app redistributes Écorché by Charleeh under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Écorché incorporates BodyParts3D, © The Database Center for Life Science, under CC BY 4.0 (older OBJ notices refer to CC BY-SA 2.1 Japan), and Z-Anatomy by Gauthier Kervyn under CC BY-SA 4.0. Écorché obtained its Z-Anatomy meshes via Johan Bellander's BodyExplorer export. [Upstream source](https://github.com/Charleeh/ecorche/tree/320805e06aee51e2e6f6b22533eb2a59d43f2d4d)
 
-The optimized GLB, manifest, upstream attribution and license text were copied from commit `320805e06aee51e2e6f6b22533eb2a59d43f2d4d`. The binary geometry is unchanged. The app applies runtime camera framing, visibility and material changes for its Focus view. The Phase 1 app screenshot includes a rendering of the model under CC BY-SA 4.0.
+The optimized GLB, manifest, upstream attribution and license text were copied from commit `320805e06aee51e2e6f6b22533eb2a59d43f2d4d`. The binary geometry is unchanged. The app applies runtime camera framing, visibility and material changes for its Focus view. The Phase 1 screenshot and Phase 2 review images show the model under CC BY-SA 4.0.
 
 - [Full upstream attribution and modifications to the original meshes](public/models/ECORCHE_ATTRIBUTION.md)
 - [CC BY-SA 4.0 license text](public/models/CC-BY-SA-4.0.txt)

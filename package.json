@@ -14,7 +14,11 @@
     "format": "prettier --write .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "anatomy:validate": "node --experimental-strip-types scripts/anatomy.mjs validate",
+    "anatomy:coverage": "node --experimental-strip-types scripts/anatomy.mjs coverage",
+    "anatomy:capture": "node --experimental-strip-types scripts/capture-anatomy.mjs",
+    "release:check": "node --experimental-strip-types scripts/anatomy.mjs release"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5",

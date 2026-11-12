@@ -50,3 +50,16 @@ The [production screenshot](screenshots/phase-1-focus.png) shows the default Foc
 2. Resolve compound groups, deep visibility, and the Occipitalis asset gap.
 3. Add the typed mapping records, visual approval evidence, coverage report and release gate.
 4. Review the two prototype structures before approving them for scored questions.
+
+## 2026-11-11 · Phase 2 anatomy audit
+
+- Compared the fixed inventory with both private textbook figures. The 35 anterior and 21 posterior labels resolve to 46 unique targets. Retained the connective-tissue exclusions and the unillustrated Vastus intermedius.
+- Validated exact selectors against the decoded 634-mesh Écorché scene and its pinned manifest. The audit mapped 42 targets for review. Occipitalis and Platysma are missing from the pin. Intercostals are incomplete and the Zygomaticus label is ambiguous.
+- Inspected the official BodyParts3D element index and the pinned BodyExplorer GLB. The alternative provides real Platysma and intercostal nodes, but needs registration and human review. The pinned Écorché external intercostal has a `midline` tag and left-only world bounds. Candidate metadata and naming references are in [Anatomy validation](ANATOMY_VALIDATION.md).
+- Added a development review page with both sides, component isolation, per-target initial camera views, and explicit occluder hiding. An initial review-image contact sheet showed the hip behind some forearm targets and hand bones near the thigh. Restricted those two regions to verified skeletal landmarks. The opaque target and translucent gray context use the original renderer.
+- Captured both sides of every mapped target from the app. The initial capture attempt timed out on an implicit select label. Explicit labels fixed the browser controls and the capture. The image check looks for visible red in each frame. The separate ledger records human decisions tied to the mapping and the image checksum.
+- Added catalog validation, machine-readable and Markdown coverage, and a 46-target anatomical release gate. The catalog has zero human decisions. See [coverage](MUSCLE_COVERAGE_V1.md) for the current review state.
+
+Checks run locally include lint, TypeScript, 11 Vitest tests, the production build, 5 Playwright tests in Chrome, catalog validation and report freshness. The release gate returned exit code 1 with 0 of 46 approvals. Lint, typecheck, unit tests and build passed with a fresh offline install in a disposable copy after dependency reads stalled in the workspace. GitHub Actions is configured to check report freshness.
+
+The next anatomy work is to review the mapped candidates and resolve the four open mappings. The phase stopped at the anatomy review checkpoint.

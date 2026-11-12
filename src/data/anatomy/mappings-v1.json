@@ -1,0 +1,1854 @@
+{
+  "temporalis": {
+    "initialView": "anterolateral",
+    "references": ["head"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Temporalis",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left temporalis",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "Z-Anatomy"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right temporalis",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "Z-Anatomy"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "masseter": {
+    "initialView": "anterolateral",
+    "references": ["head"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Superficial part",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left superficial part of masseter",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "Z-Anatomy",
+              "group": "Left masseter"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right superficial part of masseter",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "Z-Anatomy",
+              "group": "Right masseter"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Deep part",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left deep part of masseter",
+              "layer": "deep muscles",
+              "side": "left",
+              "source": "Z-Anatomy",
+              "group": "Left masseter"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right deep part of masseter",
+              "layer": "deep muscles",
+              "side": "right",
+              "source": "Z-Anatomy",
+              "group": "Right masseter"
+            }
+          ]
+        }
+      }
+    ],
+    "note": "Both parts are included. Isolate the deep part to inspect the surface hidden by the superficial part."
+  },
+  "frontalis": {
+    "initialView": "anterior",
+    "references": ["head"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Frontalis",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left frontalis",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "Z-Anatomy"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right frontalis",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "Z-Anatomy"
+            }
+          ]
+        }
+      }
+    ],
+    "note": "The textbook uses Frontalis for the frontal belly of occipitofrontalis."
+  },
+  "orbicularis_oculi": {
+    "initialView": "anterior",
+    "references": ["head"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Orbital part",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left orbital part of orbicularis oculi",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "Z-Anatomy",
+              "group": "Left orbicularis oculi"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right orbital part of orbicularis oculi",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "Z-Anatomy",
+              "group": "Right orbicularis oculi"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Palpebral part",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left palpebral part of orbicularis oculi",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "Z-Anatomy",
+              "group": "Left orbicularis oculi"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right palpebral part of orbicularis oculi",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "Z-Anatomy",
+              "group": "Right orbicularis oculi"
+            }
+          ]
+        }
+      }
+    ],
+    "note": "Both orbital and palpebral parts are included on each side."
+  },
+  "zygomaticus": {
+    "initialView": "anterior",
+    "references": ["head", "terminology"],
+    "status": "ambiguous",
+    "note": "Figure 6.22 uses an umbrella label. The major and minor meshes are distinct; the intended assessed scope is unresolved.",
+    "candidates": [
+      {
+        "name": "Left zygomaticus major",
+        "layer": "superficial muscles",
+        "side": "left",
+        "source": "Z-Anatomy"
+      },
+      {
+        "name": "Left zygomaticus minor",
+        "layer": "superficial muscles",
+        "side": "left",
+        "source": "Z-Anatomy"
+      },
+      {
+        "name": "Right zygomaticus major",
+        "layer": "superficial muscles",
+        "side": "right",
+        "source": "Z-Anatomy"
+      },
+      {
+        "name": "Right zygomaticus minor",
+        "layer": "superficial muscles",
+        "side": "right",
+        "source": "Z-Anatomy"
+      }
+    ]
+  },
+  "orbicularis_oris": {
+    "initialView": "anterior",
+    "references": ["head"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Orbicularis oris",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left orbicularis oris",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "Z-Anatomy"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right orbicularis oris",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "Z-Anatomy"
+            }
+          ]
+        }
+      }
+    ],
+    "note": "Écorché uses two separately labeled sides. Review each side and the complete oral ring in Both sides."
+  },
+  "occipitalis": {
+    "initialView": "posterior",
+    "references": ["head", "terminology", "bodyparts3d", "zanatomy"],
+    "status": "missing",
+    "note": "No occipital belly of occipitofrontalis in the pinned asset. Occipital bone and deep suboccipital muscles are different structures.",
+    "candidates": []
+  },
+  "platysma": {
+    "initialView": "anterior",
+    "references": ["head", "bodyparts3d", "bodyexplorer"],
+    "status": "missing",
+    "note": "No Platysma mesh in the pinned asset. The BodyParts3D catalog lists separate left and right OBJ candidates that still need alignment and visual review.",
+    "candidates": []
+  },
+  "sternocleidomastoid": {
+    "initialView": "anterior",
+    "references": ["head"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Sternocleidomastoid",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left sternocleidomastoid",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA13409"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right sternocleidomastoid",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA13408"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "trapezius": {
+    "initialView": "posterior",
+    "references": ["shoulder"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Descending part",
+        "meshes": {
+          "left": [
+            {
+              "name": "Descending part of left trapezius",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA33587"
+            }
+          ],
+          "right": [
+            {
+              "name": "Descending part of right trapezius",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA33586"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Transverse part",
+        "meshes": {
+          "left": [
+            {
+              "name": "Transverse part of left trapezius",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA33585"
+            }
+          ],
+          "right": [
+            {
+              "name": "Transverse part of right trapezius",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA33584"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Ascending part",
+        "meshes": {
+          "left": [
+            {
+              "name": "Ascending part of left trapezius",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA33583"
+            }
+          ],
+          "right": [
+            {
+              "name": "Ascending part of right trapezius",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA33581"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "deltoid": {
+    "initialView": "anterolateral",
+    "references": ["shoulder"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Clavicular part",
+        "meshes": {
+          "left": [
+            {
+              "name": "Clavicular part of left deltoid",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA34681"
+            }
+          ],
+          "right": [
+            {
+              "name": "Clavicular part of right deltoid",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA34680"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Acromial part",
+        "meshes": {
+          "left": [
+            {
+              "name": "Acromial part of left deltoid",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA34683"
+            }
+          ],
+          "right": [
+            {
+              "name": "Acromial part of right deltoid",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA34682"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Spinal part",
+        "meshes": {
+          "left": [
+            {
+              "name": "Spinal part of left deltoid",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA34685"
+            }
+          ],
+          "right": [
+            {
+              "name": "Spinal part of right deltoid",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA34684"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "latissimus_dorsi": {
+    "initialView": "posterolateral",
+    "references": ["shoulder"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Latissimus dorsi",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left latissimus dorsi",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "Z-Anatomy"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right latissimus dorsi",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "Z-Anatomy"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "pectoralis_minor": {
+    "initialView": "anterior",
+    "references": ["thorax"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Pectoralis minor",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left pectoralis minor",
+              "layer": "deep muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA13376"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right pectoralis minor",
+              "layer": "deep muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA13375"
+            }
+          ]
+        }
+      }
+    ],
+    "hide": {
+      "left": [
+        "Abdominal part of left pectoralis major",
+        "Clavicular part of left pectoralis major",
+        "Sternocostal part of left pectoralis major"
+      ],
+      "right": [
+        "Abdominal part of right pectoralis major",
+        "Clavicular part of right pectoralis major",
+        "Sternocostal part of right pectoralis major"
+      ]
+    }
+  },
+  "pectoralis_major": {
+    "initialView": "anterior",
+    "references": ["thorax"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Clavicular part",
+        "meshes": {
+          "left": [
+            {
+              "name": "Clavicular part of left pectoralis major",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA34691"
+            }
+          ],
+          "right": [
+            {
+              "name": "Clavicular part of right pectoralis major",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA34690"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Sternocostal part",
+        "meshes": {
+          "left": [
+            {
+              "name": "Sternocostal part of left pectoralis major",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA79980"
+            }
+          ],
+          "right": [
+            {
+              "name": "Sternocostal part of right pectoralis major",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA79979"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Abdominal part",
+        "meshes": {
+          "left": [
+            {
+              "name": "Abdominal part of left pectoralis major",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA45875"
+            }
+          ],
+          "right": [
+            {
+              "name": "Abdominal part of right pectoralis major",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA45874"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "serratus_anterior": {
+    "initialView": "anterolateral",
+    "references": ["thorax"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Serratus anterior",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left serratus anterior",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA13399"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right serratus anterior",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA13398"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "intercostals": {
+    "initialView": "anterior",
+    "references": ["thorax", "bodyparts3d", "bodyexplorer"],
+    "status": "partial",
+    "note": "The single external intercostal node is tagged midline but its decoded bounds are entirely on the model’s left. Internal and innermost layers and opposite-side geometry are absent from the pin.",
+    "candidates": [
+      {
+        "name": "External intercostal muscle",
+        "layer": "deep muscles",
+        "side": "midline",
+        "source": "BodyParts3D",
+        "fma": "FMA9756"
+      }
+    ],
+    "requiredComponents": [
+      "External intercostals",
+      "Internal intercostals",
+      "Innermost intercostals"
+    ]
+  },
+  "triceps_brachii": {
+    "initialView": "posterolateral",
+    "references": ["upper"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Long head",
+        "meshes": {
+          "left": [
+            {
+              "name": "Long head of left triceps brachii",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA37700"
+            }
+          ],
+          "right": [
+            {
+              "name": "Long head of right triceps brachii",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA37699"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Lateral head",
+        "meshes": {
+          "left": [
+            {
+              "name": "Lateral head of left triceps brachii",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA37698"
+            }
+          ],
+          "right": [
+            {
+              "name": "Lateral head of right triceps brachii",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA37697"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Medial head",
+        "meshes": {
+          "left": [
+            {
+              "name": "Medial head of left triceps brachii",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA37696"
+            }
+          ],
+          "right": [
+            {
+              "name": "Medial head of right triceps brachii",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA37695"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "biceps_brachii": {
+    "initialView": "anterior",
+    "references": ["upper"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Long head",
+        "meshes": {
+          "left": [
+            {
+              "name": "Long head of left biceps brachii",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA37687"
+            }
+          ],
+          "right": [
+            {
+              "name": "Long head of right biceps brachii",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA37686"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Short head",
+        "meshes": {
+          "left": [
+            {
+              "name": "Short head of left biceps brachii",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA37685"
+            }
+          ],
+          "right": [
+            {
+              "name": "Short head of right biceps brachii",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA37684"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "brachialis": {
+    "initialView": "anterolateral",
+    "references": ["upper"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Brachialis",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left brachialis",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA37669"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right brachialis",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA37668"
+            }
+          ]
+        }
+      }
+    ],
+    "hide": {
+      "left": [
+        "Long head of left biceps brachii",
+        "Short head of left biceps brachii"
+      ],
+      "right": [
+        "Long head of right biceps brachii",
+        "Short head of right biceps brachii"
+      ]
+    }
+  },
+  "brachioradialis": {
+    "initialView": "anterolateral",
+    "references": ["upper"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Brachioradialis",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left brachioradialis",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA38487"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right brachioradialis",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA38486"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "flexor_carpi_radialis": {
+    "initialView": "anterior",
+    "references": ["upper"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Flexor carpi radialis",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left flexor carpi radialis",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA38461"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right flexor carpi radialis",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA38460"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "extensor_carpi_radialis_longus": {
+    "initialView": "posterolateral",
+    "references": ["upper"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Extensor carpi radialis longus",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left extensor carpi radialis longus",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA38496"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right extensor carpi radialis longus",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA38495"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "flexor_carpi_ulnaris": {
+    "initialView": "posterior",
+    "references": ["upper"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Humeral head",
+        "meshes": {
+          "left": [
+            {
+              "name": "Humeral head of left flexor carpi ulnaris",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA38618"
+            }
+          ],
+          "right": [
+            {
+              "name": "Humeral head of right flexor carpi ulnaris",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA38617"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Ulnar head",
+        "meshes": {
+          "left": [
+            {
+              "name": "Ulnar head of left flexor carpi ulnaris",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA38620"
+            }
+          ],
+          "right": [
+            {
+              "name": "Ulnar head of right flexor carpi ulnaris",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA38619"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "extensor_carpi_ulnaris": {
+    "initialView": "posterolateral",
+    "references": ["upper"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Extensor carpi ulnaris",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left extensor carpi ulnaris",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA38508"
+            },
+            {
+              "name": "Left extensor carpi ulnaris (2)",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA38508"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right extensor carpi ulnaris",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA38507"
+            },
+            {
+              "name": "Right extensor carpi ulnaris (2)",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA38507"
+            }
+          ]
+        }
+      }
+    ],
+    "note": "Includes both named pieces per side with the same sided FMA identifier; inspect the smaller piece separately."
+  },
+  "extensor_digitorum": {
+    "initialView": "posterior",
+    "references": ["upper"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Extensor digitorum",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left extensor digitorum",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA38502"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right extensor digitorum",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA38501"
+            }
+          ]
+        }
+      }
+    ],
+    "note": "Forearm extensor digitorum. The lower-leg extensor digitorum longus is a separate target."
+  },
+  "rectus_abdominis": {
+    "initialView": "anterior",
+    "references": ["thorax"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Rectus abdominis",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left rectus abdominis",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "Z-Anatomy"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right rectus abdominis",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "Z-Anatomy"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "external_oblique": {
+    "initialView": "anterior",
+    "references": ["thorax"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "External oblique",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left external oblique",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA13337"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right external oblique",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA13336"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "internal_oblique": {
+    "initialView": "anterior",
+    "references": ["thorax"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Internal oblique",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left internal oblique",
+              "layer": "deep muscles",
+              "side": "left",
+              "source": "Z-Anatomy"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right internal oblique",
+              "layer": "deep muscles",
+              "side": "right",
+              "source": "Z-Anatomy"
+            }
+          ]
+        }
+      }
+    ],
+    "hide": {
+      "left": ["Left external oblique"],
+      "right": ["Right external oblique"]
+    }
+  },
+  "transversus_abdominis": {
+    "initialView": "anterior",
+    "references": ["thorax"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Transversus abdominis",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left transversus abdominis",
+              "layer": "deep muscles",
+              "side": "left",
+              "source": "Z-Anatomy"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right transversus abdominis",
+              "layer": "deep muscles",
+              "side": "right",
+              "source": "Z-Anatomy"
+            }
+          ]
+        }
+      }
+    ],
+    "hide": {
+      "left": ["Left external oblique", "Left internal oblique"],
+      "right": ["Right external oblique", "Right internal oblique"]
+    }
+  },
+  "iliopsoas": {
+    "initialView": "anterior",
+    "references": ["lower", "keyTerms"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Iliacus",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left iliacus",
+              "layer": "deep muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA22323"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right iliacus",
+              "layer": "deep muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA22322"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Psoas major",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left psoas major",
+              "layer": "deep muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA22343"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right psoas major",
+              "layer": "deep muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA22342"
+            }
+          ]
+        }
+      }
+    ],
+    "note": "Two-component scope follows iliacus and psoas major. Psoas minor is outside this definition.",
+    "hide": {
+      "left": [
+        "Left rectus abdominis",
+        "Left external oblique",
+        "Left rectus femoris"
+      ],
+      "right": [
+        "Right rectus abdominis",
+        "Right external oblique",
+        "Right rectus femoris"
+      ]
+    }
+  },
+  "sartorius": {
+    "initialView": "anterior",
+    "references": ["lower"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Sartorius",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left sartorius",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA22355"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right sartorius",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA22354"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "adductor_muscles": {
+    "initialView": "medial-anterior",
+    "references": ["lower", "minimus"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Adductor longus",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left adductor longus",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA22457"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right adductor longus",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA22456"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Adductor brevis",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left adductor brevis",
+              "layer": "deep muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA22454"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right adductor brevis",
+              "layer": "deep muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA22452"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Adductor magnus including model’s separate minimus",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left adductor magnus",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA22460"
+            },
+            {
+              "name": "Left adductor minimus",
+              "layer": "deep muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA43887"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right adductor magnus",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA22459"
+            },
+            {
+              "name": "Right adductor minimus",
+              "layer": "deep muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA43886"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Gracilis",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left gracilis",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA43884"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right gracilis",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA43883"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Pectineus",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left pectineus",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA22451"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right pectineus",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA22450"
+            }
+          ]
+        }
+      }
+    ],
+    "note": "Working definition follows the five medial thigh adductors in OpenStax. The source splits out adductor minimus, treated here as a component of magnus. The PDF does not enumerate members; review scope and overlap before approval."
+  },
+  "rectus_femoris": {
+    "initialView": "anterior",
+    "references": ["lower"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Rectus femoris",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left rectus femoris",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA38929"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right rectus femoris",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA38928"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vastus_lateralis": {
+    "initialView": "anterior",
+    "references": ["lower"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Vastus lateralis",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left vastus lateralis",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA38931"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right vastus lateralis",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA38930"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vastus_medialis": {
+    "initialView": "anterior",
+    "references": ["lower"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Vastus medialis",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left vastus medialis",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA38933"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right vastus medialis",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA38932"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vastus_intermedius": {
+    "initialView": "anterior",
+    "references": ["lower"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Vastus intermedius",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left vastus intermedius",
+              "layer": "deep muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA38935"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right vastus intermedius",
+              "layer": "deep muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA38934"
+            }
+          ]
+        }
+      }
+    ],
+    "note": "Figure 6.22 lists this target but does not show it. The review view removes rectus femoris and approaches the anterior thigh.",
+    "hide": {
+      "left": ["Left rectus femoris"],
+      "right": ["Right rectus femoris"]
+    }
+  },
+  "gluteus_medius": {
+    "initialView": "posterolateral",
+    "references": ["lower"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Gluteus medius",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left gluteus medius",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA22331"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right gluteus medius",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA22330"
+            }
+          ]
+        }
+      }
+    ],
+    "hide": {
+      "left": ["Left gluteus maximus"],
+      "right": ["Right gluteus maximus"]
+    }
+  },
+  "gluteus_maximus": {
+    "initialView": "posterolateral",
+    "references": ["lower"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Gluteus maximus",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left gluteus maximus",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA22329"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right gluteus maximus",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA22328"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "biceps_femoris": {
+    "initialView": "posterolateral",
+    "references": ["lower"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Long head",
+        "meshes": {
+          "left": [
+            {
+              "name": "Long head of left biceps femoris",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA45889"
+            }
+          ],
+          "right": [
+            {
+              "name": "Long head of right biceps femoris",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA45888"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Short head",
+        "meshes": {
+          "left": [
+            {
+              "name": "Short head of left biceps femoris",
+              "layer": "deep muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA45892"
+            }
+          ],
+          "right": [
+            {
+              "name": "Short head of right biceps femoris",
+              "layer": "deep muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA45891"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "semitendinosus": {
+    "initialView": "posterior",
+    "references": ["lower"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Semitendinosus",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left semitendinosus",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA22359"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right semitendinosus",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA22358"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "semimembranosus": {
+    "initialView": "posteromedial",
+    "references": ["lower"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Semimembranosus",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left semimembranosus",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA22449"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right semimembranosus",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA22448"
+            }
+          ]
+        }
+      }
+    ],
+    "hide": {
+      "left": ["Left semitendinosus"],
+      "right": ["Right semitendinosus"]
+    }
+  },
+  "fibularis_longus": {
+    "initialView": "lateral",
+    "references": ["lower"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Fibularis longus",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left fibularis longus",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA22553"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right fibularis longus",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA22552"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "extensor_digitorum_longus": {
+    "initialView": "anterolateral",
+    "references": ["lower"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Extensor digitorum longus",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left extensor digitorum longus",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA22549"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right extensor digitorum longus",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA22548"
+            }
+          ]
+        }
+      }
+    ],
+    "note": "Lower-leg extensor digitorum longus. The forearm extensor digitorum is a separate target."
+  },
+  "tibialis_anterior": {
+    "initialView": "anterior",
+    "references": ["lower"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Tibialis anterior",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left tibialis anterior",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA22545"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right tibialis anterior",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA22544"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "gastrocnemius": {
+    "initialView": "posterior",
+    "references": ["lower"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Medial head",
+        "meshes": {
+          "left": [
+            {
+              "name": "Medial head of left gastrocnemius",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA45958"
+            }
+          ],
+          "right": [
+            {
+              "name": "Medial head of right gastrocnemius",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA45957"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Lateral head",
+        "meshes": {
+          "left": [
+            {
+              "name": "Lateral head of left gastrocnemius",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA45961"
+            }
+          ],
+          "right": [
+            {
+              "name": "Lateral head of right gastrocnemius",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA45960"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "soleus": {
+    "initialView": "posterior",
+    "references": ["lower"],
+    "status": "mapped",
+    "components": [
+      {
+        "label": "Soleus",
+        "meshes": {
+          "left": [
+            {
+              "name": "Left soleus",
+              "layer": "superficial muscles",
+              "side": "left",
+              "source": "BodyParts3D",
+              "fma": "FMA22559"
+            }
+          ],
+          "right": [
+            {
+              "name": "Right soleus",
+              "layer": "superficial muscles",
+              "side": "right",
+              "source": "BodyParts3D",
+              "fma": "FMA22558"
+            }
+          ]
+        }
+      }
+    ],
+    "note": "Gastrocnemius heads are hidden in the deep review view.",
+    "hide": {
+      "left": [
+        "Medial head of left gastrocnemius",
+        "Lateral head of left gastrocnemius"
+      ],
+      "right": [
+        "Medial head of right gastrocnemius",
+        "Lateral head of right gastrocnemius"
+      ]
+    }
+  }
+}

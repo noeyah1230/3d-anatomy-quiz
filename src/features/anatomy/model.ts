@@ -5,9 +5,7 @@ import {
   previewTargets,
   type MeshSelector,
   type PreviewTarget,
-} from './targets';
-
-export const modelUrl = `${import.meta.env.BASE_URL}models/ecorche.meshopt.glb`;
+} from './targets.ts';
 
 export type MeshMetadata = {
   name: string;
@@ -61,7 +59,8 @@ function matches(metadata: MeshMetadata, selector: MeshSelector) {
     metadata.side === selector.side &&
     metadata.source === selector.source &&
     metadata.layer === selector.layer &&
-    metadata.group === selector.group
+    metadata.group === selector.group &&
+    (selector.fma === undefined || metadata.fma === selector.fma)
   );
 }
 
@@ -135,6 +134,7 @@ export async function loadAnatomyModel(
   signal: AbortSignal,
   onProgress: (percent: number) => void,
 ) {
+  const modelUrl = `${import.meta.env.BASE_URL}models/ecorche.meshopt.glb`;
   const response = await fetch(modelUrl, { signal });
   if (!response.ok)
     throw new Error(`Model request failed (HTTP ${response.status}).`);

@@ -23,7 +23,7 @@ import {
   type Theme,
 } from './visuals/materials';
 
-type CameraView = 'focus' | 'front' | 'left';
+type CameraView = 'focus' | 'front' | 'back' | 'left';
 
 export type CameraCommand =
   { action: 'frame'; view: CameraView } | { action: 'zoom'; factor: number };
@@ -41,12 +41,14 @@ type Props = {
 const directions = {
   focus: new Vector3(1, 0.06, 0.68).normalize(),
   front: new Vector3(0, 0, 1),
+  back: new Vector3(0, 0, -1),
   left: new Vector3(1, 0, 0),
 };
 
 function Scene({
   model,
   plan,
+  focus,
   theme,
   highlight,
   command,
@@ -55,6 +57,7 @@ function Scene({
 }: Pick<Props, 'theme' | 'highlight' | 'command' | 'onError'> & {
   model: AnatomyModel;
   plan: ReturnType<typeof planFocus>;
+  focus?: PreviewTarget['focus'];
   onPick?: (metadata: MeshMetadata) => void;
 }) {
   const controls = useRef<ComponentRef<typeof OrbitControls>>(null);
@@ -125,23 +128,34 @@ function Scene({
       orbit.enableDamping = damping;
       const view = command.action === 'frame' ? command.view : 'focus';
       const center = plan.bounds.getCenter(new Vector3());
-      // Leave room for the skull above these two head-and-face targets.
-      center.y += 0.02;
+      center.y += focus?.centerYOffset ?? 0.02;
       const radius = plan.bounds.getBoundingSphere(new Sphere()).radius;
       const vertical = (camera.fov * Math.PI) / 360;
       const horizontal = Math.atan(
         Math.tan(vertical) * (size.width / size.height),
       );
-      const paddedRadius = Math.max(0.134, radius * 1.4);
+      const paddedRadius = Math.max(focus?.minRadius ?? 0.134, radius * 1.4);
       const distance = paddedRadius / Math.sin(Math.min(vertical, horizontal));
       orbit.target.copy(center);
-      camera.position.copy(center).addScaledVector(directions[view], distance);
+      const direction =
+        view === 'focus' && focus
+          ? new Vector3(...focus.direction).normalize()
+          : directions[view];
+      camera.position.copy(center).addScaledVector(direction, distance);
     }
     lastBounds.current = plan.bounds;
     lastCommand.current = command;
     orbit.update();
     invalidate();
-  }, [camera, command, invalidate, plan.bounds, size.height, size.width]);
+  }, [
+    camera,
+    command,
+    focus,
+    invalidate,
+    plan.bounds,
+    size.height,
+    size.width,
+  ]);
 
   function pick(event: ThreeEvent<MouseEvent>) {
     const name: unknown = event.object.userData.name;
@@ -283,6 +297,7 @@ export default function AnatomyViewer({
         <Scene
           model={model}
           plan={plan}
+          focus={target.focus}
           theme={theme}
           highlight={highlight}
           command={command}

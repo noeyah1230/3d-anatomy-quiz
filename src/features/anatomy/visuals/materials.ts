@@ -1,6 +1,6 @@
 import { Box3, MeshStandardMaterial, Vector3 } from 'three';
-import { selectTarget, type AnatomyModel } from '../model';
-import type { PreviewTarget } from '../targets';
+import { selectTarget, type AnatomyModel } from '../model.ts';
+import type { PreviewTarget } from '../targets.ts';
 
 export type VisualRole = 'target' | 'context' | 'dimmed' | 'hidden';
 export type Highlight = 'red' | 'blue';
@@ -72,12 +72,30 @@ export function planFocus(model: AnatomyModel, target: PreviewTarget) {
   for (const entry of entries) bounds.union(entry.bounds);
 
   const center = bounds.getCenter(new Vector3());
+  const contextRadius = target.focus
+    ? Math.max(
+        target.focus.contextRadius,
+        bounds.getSize(new Vector3()).length() * 0.55,
+      )
+    : 0.175;
+  const hidden = new Set(target.hiddenNames);
+  const contextBones =
+    target.focus?.contextBones && new Set(target.focus.contextBones);
   const roles = new Map<string, VisualRole>();
   for (const [name, entry] of model.meshes) {
     const distance = entry.bounds.getCenter(new Vector3()).distanceTo(center);
+    const layer = entry.metadata.layer;
+    const allowedContext =
+      layer !== 'skeleton' || !contextBones || contextBones.has(name);
     roles.set(
       name,
-      resolveRole(names.has(name), distance < 0.175, entry.metadata.layer),
+      hidden.has(name) && !names.has(name)
+        ? 'hidden'
+        : resolveRole(
+            names.has(name),
+            allowedContext && distance < contextRadius,
+            layer,
+          ),
     );
   }
   return { bounds, roles };
