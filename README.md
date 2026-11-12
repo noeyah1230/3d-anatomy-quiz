@@ -1,10 +1,10 @@
-# Anatomy Quiz
+# 3D Anatomy Quiz
 
-Explore human anatomy in interactive 3D, with a 46-target textbook curriculum planned for the first complete release.
+A browser-based anatomy project for exploring and eventually practicing a 46-target muscle curriculum in interactive 3D.
 
 **In development · Local prototype**
 
-Public GitHub repository and live demo are pending authorization.
+The current checkpoint includes an interactive viewer and an anatomy review workflow. A hosted demo is planned.
 
 ![Phase 1 Focus viewer with the left masseter highlighted in red](docs/screenshots/phase-1-focus.png)
 
@@ -21,21 +21,31 @@ Open the local URL printed by Vite. Pick Masseter or Temporalis, switch Red and 
 
 Open the development URL with `?review=1` to inspect both sides, compare initial views and isolate individual source meshes. The [46-target coverage report](docs/MUSCLE_COVERAGE_V1.md) links to the review images.
 
-## Shipped locally
+## Current features
 
 - Real Écorché geometry for left Masseter and Temporalis preview selections. The two masseter parts are highlighted together.
 - Default charcoal Focus view, transparent gray landmarks, and persistent highlight and theme preferences.
 - Drag orbit, scroll or pinch zoom, keyboard-accessible zoom buttons, front/left presets and camera reset.
 - Download progress, recoverable loading and WebGL failure states, and visible asset credits.
-- Phase 2 anatomy audit, 42 mapped review views, four documented blockers, and a release gate tied to explicit human decisions.
+- Anatomy review with left and right views, component isolation, exact mesh metadata, and screenshots for 42 mapped targets.
+
+## Development phases
+
+| Phase | Completed work                                                                                     |
+| ----- | -------------------------------------------------------------------------------------------------- |
+| 0     | React and TypeScript scaffold, build, test harness, and GitHub Actions configuration               |
+| 1     | Interactive Écorché viewer, Focus rendering, camera controls, and mesh inspector                   |
+| 2     | Audit of 46 targets, mesh mappings, human review records, screenshots, and an anatomy release gate |
+
+The [development log](docs/DEVELOPMENT_LOG.md) records decisions, setbacks, and actual test results. The [coverage report](docs/MUSCLE_COVERAGE_V1.md) shows 42 mapped, four blocked, and **0 of 46 human-approved**.
 
 ## Planned
 
 - Resolve four mapping blockers and obtain human visual approval for all 46 curriculum targets.
 - Typing and flashcards, all three display modes, review and results, local progress, and PWA installation.
-- GitHub publication, Cloudflare Pages production and preview deployments, and release history.
+- Cloudflare Pages deployment and release history.
 
-The scope inventory currently has **0 / 46 approved** targets. The proof of concept focuses on a left-side head view and includes no graded questions. Browser and anatomy review details are tracked in the [development log](docs/DEVELOPMENT_LOG.md) and [anatomy validation notes](docs/ANATOMY_VALIDATION.md).
+Human approval is required before a mapped structure can become a graded question. [Anatomy validation notes](docs/ANATOMY_VALIDATION.md)
 
 ## Architecture
 
@@ -71,8 +81,6 @@ The model is Écorché, based on BodyParts3D and Z-Anatomy, and is redistributed
 
 ### Development process and AI assistance
 
-The student supplied the curriculum and product constraints. Codex built this checkpoint and its checks. The [development log](docs/DEVELOPMENT_LOG.md) records the implementation and verification, and the [portfolio summary](docs/PORTFOLIO_SUMMARY.md) is in progress.
+The student supplied the curriculum and defined the project requirements. Codex assisted with implementation and automated checks. [Portfolio summary](docs/PORTFOLIO_SUMMARY.md)
 
 [Roadmap](docs/ROADMAP.md) · [Technical decisions](docs/DECISIONS.md) · [Visual design](docs/VISUAL_DESIGN_SPEC.md) · [Publication instructions](docs/DEPLOYMENT.md)
-
-Issues and releases will be linked once the public repository exists.

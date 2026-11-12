@@ -63,3 +63,9 @@ The [production screenshot](screenshots/phase-1-focus.png) shows the default Foc
 Checks run locally include lint, TypeScript, 11 Vitest tests, the production build, 5 Playwright tests in Chrome, catalog validation and report freshness. The release gate returned exit code 1 with 0 of 46 approvals. Lint, typecheck, unit tests and build passed with a fresh offline install in a disposable copy after dependency reads stalled in the workspace. GitHub Actions is configured to check report freshness.
 
 The next anatomy work is to review the mapped candidates and resolve the four open mappings. The phase stopped at the anatomy review checkpoint.
+
+## 2026-11-12 · GitHub publication preparation
+
+Verified the existing Phase 2 commit after the local storage interruption. Updated the README for portfolio readers, clarified the application license status, and expanded ignore rules for local credentials and build artifacts. The anatomy data, viewer, tests, and review screenshots remain at the Phase 2 checkpoint.
+
+Reviewed the commit metadata for public exposure. The repository is being prepared as a development prototype with the original model attribution and the full development record.

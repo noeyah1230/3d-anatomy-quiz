@@ -15,3 +15,20 @@ playwright-report/
 /drafts/
 /reference-screenshots/
 /screenshots/
+
+# Local tooling, credentials, and private material
+.eslintcache
+.vite/
+*.log
+.npmrc
+.envrc
+*.pfx
+*.p8
+*.ppk
+id_rsa
+id_ed25519
+id_ecdsa
+/.ssh/
+/secrets/
+/credentials/
+/3D_Anatomy_Quiz_Codex_v3_Bundle.zip
