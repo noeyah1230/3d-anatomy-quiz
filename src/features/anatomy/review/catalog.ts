@@ -155,6 +155,8 @@ export type HumanDecision = {
   note: string;
   checks?: readonly string[];
   screenshotSha256?: string;
+  acceptedAnswers?: readonly string[];
+  explanation?: string;
 };
 
 export const recordedDecisions: Readonly<Record<string, HumanDecision>> =

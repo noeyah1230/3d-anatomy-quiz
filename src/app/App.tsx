@@ -4,7 +4,12 @@ import {
   previewTargets,
   type PreviewTarget,
 } from '../features/anatomy/targets';
-import type { Highlight, Theme } from '../features/anatomy/visuals/materials';
+import { useHighlight, useTheme } from './preferences';
+import {
+  AppearanceControls,
+  useAppearance,
+} from '../features/anatomy/visuals/AppearanceControls';
+import { defaultAppearance } from '../features/anatomy/visuals/appearance';
 import { ErrorBoundary } from './ErrorBoundary';
 
 const AnatomyViewer = lazy(() => import('../features/anatomy/AnatomyViewer'));
@@ -15,39 +20,10 @@ const rendererError =
   'The 3D renderer could not start. Check WebGL 2 support and retry.';
 const attributionUrl = `${import.meta.env.BASE_URL}models/ECORCHE_ATTRIBUTION.md`;
 
-function usePreference<T extends string>(
-  key: string,
-  options: readonly [T, ...T[]],
-) {
-  const [value, setValue] = useState<T>(() => {
-    try {
-      const stored = window.localStorage.getItem(key);
-      return options.find((option) => option === stored) ?? options[0];
-    } catch {
-      return options[0];
-    }
-  });
-
-  function update(next: T) {
-    setValue(next);
-    try {
-      window.localStorage.setItem(key, next);
-    } catch {
-      // The viewer also works when browser storage is restricted.
-    }
-  }
-  return [value, update] as const;
-}
-
 export function App() {
-  const [theme, setTheme] = usePreference<Theme>('anatomy.theme', [
-    'dark',
-    'light',
-  ]);
-  const [highlight, setHighlight] = usePreference<Highlight>(
-    'anatomy.highlight',
-    ['red', 'blue'],
-  );
+  const [theme, setTheme] = useTheme();
+  const [highlight, setHighlight] = useHighlight();
+  const [appearance, setAppearance] = useAppearance();
   const [target, setTarget] = useState<PreviewTarget>(previewTargets[0]);
   const [command, setCommand] = useState<CameraCommand>(initialCamera);
   const [ready, setReady] = useState(false);
@@ -92,14 +68,18 @@ export function App() {
           <span className="brand-mark" aria-hidden="true" />
           Anatomy Quiz
         </div>
-        <button
-          type="button"
-          className="theme-button"
-          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-        >
-          <span aria-hidden="true">{theme === 'dark' ? '☼' : '◐'}</span>
-          {theme === 'dark' ? 'Light theme' : 'Dark theme'}
-        </button>
+        <div className="masthead-controls">
+          <a href="?study=typing">Scored practice</a>
+          <a href="?study=typing&preview=1">Ungraded preview</a>
+          <button
+            type="button"
+            className="theme-button"
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+          >
+            <span aria-hidden="true">{theme === 'dark' ? '☼' : '◐'}</span>
+            {theme === 'dark' ? 'Light theme' : 'Dark theme'}
+          </button>
+        </div>
       </header>
 
       <main className="page-width">
@@ -118,7 +98,7 @@ export function App() {
                 <span className="region">Head &amp; face</span>
                 <h2>{target.label}</h2>
               </div>
-              <span className="mode">Focus</span>
+              <span className="mode">{appearance.mode}</span>
             </div>
             <div className="stage">
               {error ? (
@@ -140,6 +120,7 @@ export function App() {
                       target={target}
                       theme={theme}
                       highlight={highlight}
+                      appearance={appearance}
                       command={command}
                       inspect={inspect}
                       onReady={setReady}
@@ -228,6 +209,17 @@ export function App() {
                 </button>
               </div>
             </div>
+            <details className="settings-section preview-appearance">
+              <summary>Appearance</summary>
+              <AppearanceControls
+                value={appearance}
+                onChange={setAppearance}
+                onReset={() => {
+                  setAppearance(defaultAppearance);
+                  setHighlight('red');
+                }}
+              />
+            </details>
             <div className="settings-section">
               <h2>Camera</h2>
               <div className="segmented" role="group" aria-label="Camera views">
