@@ -69,3 +69,23 @@ The next anatomy work is to review the mapped candidates and resolve the four op
 Verified the existing Phase 2 commit after the local storage interruption. Updated the README for portfolio readers, clarified the application license status, and expanded ignore rules for local credentials and build artifacts. The anatomy data, viewer, tests, and review screenshots remain at the Phase 2 checkpoint.
 
 Reviewed the commit metadata for public exposure. The repository is being prepared as a development prototype with the original model attribution and the full development record.
+
+## 2026-11-12 · Phase 3 typing and flashcards
+
+- Started a local feature branch from the exact published checkpoint. Added typing with strict answer comparison, feedback and sources, and flashcards with reveal and explicit recall ratings. Round results stay in memory.
+- Reused the anatomy audit to generate the practice catalog. Eligibility requires a current human decision and matching evidence. The browser verifies the model hash and mesh metadata before enabling grading. The real catalog remains empty at 0 of 46 approved targets.
+- Shared the appearance and camera controls across the practice modes. Added Focus, Strict Quiz, Context, opacity and layer controls, appearance reset, and optional camera orbit. The muscle viewer keeps its two named previews and offers the same appearance settings.
+- Used isolated browser fixtures to exercise full rounds, IME handling, touch controls, and failures without changing the anatomy ledger. The development preview remains separate from graded questions.
+
+Lint, TypeScript, 15 Vitest tests, 10 Playwright tests in Chrome, the production build, the anatomy audit, and coverage freshness passed. Both production practice routes showed their empty states at a mobile viewport. The release gate remains closed at 0 of 46 approvals. Vite still reports a size advisory for the lazy 3D bundle.
+
+Added a separate ungraded preview for the two existing viewer targets. It reveals source model labels and advances through both modes without entering the grading or recall-rating flow.
+
+## 2026-11-13 · Phase 3 publication review
+
+- User testing surfaced missing body parts in the anatomy reviewer and difficulty finding the ungraded preview. The reviewer now identifies its four blocked mappings and offers a wider gray context for mapped targets. Focus remains the default used by the original captures. The viewer and reviewer both link directly to the ungraded preview.
+- Prepared a Phase 3 snapshot from the public checkpoint. Later local work on saved progress, curriculum filters, and offline installation remains outside this publication snapshot.
+- Captured the [typing](screenshots/phase-3-typing.png) and [flashcard](screenshots/phase-3-flashcards.png) previews from the production build using the actual model and the empty human-approval ledger.
+- The clean install, lint, typecheck, 15 Vitest tests, 11 Playwright tests in Chrome, coverage validation, all 42 review-image checksum checks, and production build passed. A production Chrome smoke test exercised the empty scored state, both ungraded modes, development-only review isolation, and 390 px touch emulation. The 46-target release check exited with code 1 as expected at 0 of 46 approvals. Vite still reports the lazy 3D chunk size advisory.
+
+The preview is ready for owner review before publication.

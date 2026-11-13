@@ -1,64 +1,43 @@
 # 3D Anatomy Quiz
 
-A browser-based anatomy project for exploring and eventually practicing a 46-target muscle curriculum in interactive 3D.
+A browser-based study app that uses interactive 3D models to help students identify muscles. Its curriculum tracks 46 targets from two assigned anatomy figures.
 
-**In development · Local prototype**
+**Phase 3 development preview.** Try typing or flashcards with Masseter and Temporalis. Scored practice opens for each target after human anatomy review.
 
-The current checkpoint includes an interactive viewer and an anatomy review workflow. A hosted demo is planned.
-
-![Phase 1 Focus viewer with the left masseter highlighted in red](docs/screenshots/phase-1-focus.png)
+![The typing preview with the left masseter highlighted in red beside the answer field](docs/screenshots/phase-3-typing.png)
 
 ## Try it locally
 
-Use Node 24 and npm. The pinned model and its attribution are included in the checkout.
+Use Node 24 and npm. The pinned model and its attribution are included.
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Open the local URL printed by Vite. Pick Masseter or Temporalis, switch Red and Blue, and drag or use the camera controls. Add `?inspect=1` to the development URL to inspect a mesh's source name, side, layer and group.
+Open the URL printed by Vite. Choose **Ungraded preview** in the header, then **Typing** or **Flashcards**. Type a guess or reveal the source model label. The preview saves no scores or recall ratings.
 
-Open the development URL with `?review=1` to inspect both sides, compare initial views and isolate individual source meshes. The [46-target coverage report](docs/MUSCLE_COVERAGE_V1.md) links to the review images.
+**Scored practice** currently shows an empty state because the anatomy ledger has **0 of 46 human-approved targets**. Once a target is approved, typing checks the answer and flashcards ask for an explicit recall rating.
 
-## Current features
+## What works today
 
-- Real Écorché geometry for left Masseter and Temporalis preview selections. The two masseter parts are highlighted together.
-- Default charcoal Focus view, transparent gray landmarks, and persistent highlight and theme preferences.
-- Drag orbit, scroll or pinch zoom, keyboard-accessible zoom buttons, front/left presets and camera reset.
-- Download progress, recoverable loading and WebGL failure states, and visible asset credits.
-- Anatomy review with left and right views, component isolation, exact mesh metadata, and screenshots for 42 mapped targets.
+- Typing and flashcards share an orbitable viewer with camera presets, zoom, and reset.
+- Focus, Strict Quiz, and Context modes keep the target opaque in red or blue and use gray for supporting anatomy. Appearance and theme preferences persist in the browser.
+- The development-only anatomy reviewer shows each mapped target on both sides. Open the local URL with `?review=1`, select a target, and toggle **Show more surrounding anatomy** when you need additional landmarks. The picker labels four blocked targets.
+- The [coverage report](docs/MUSCLE_COVERAGE_V1.md) links to evidence for all 42 mapped targets and explains each blocked mapping.
+
+![The flashcard preview after revealing the Temporalis source model label in blue](docs/screenshots/phase-3-flashcards.png)
 
 ## Development phases
 
-| Phase | Completed work                                                                                     |
-| ----- | -------------------------------------------------------------------------------------------------- |
-| 0     | React and TypeScript scaffold, build, test harness, and GitHub Actions configuration               |
-| 1     | Interactive Écorché viewer, Focus rendering, camera controls, and mesh inspector                   |
-| 2     | Audit of 46 targets, mesh mappings, human review records, screenshots, and an anatomy release gate |
+| Phase | Scope                                                                  |
+| ----- | ---------------------------------------------------------------------- |
+| 0     | React and TypeScript scaffold, build, tests, and GitHub Actions        |
+| 1     | Interactive Écorché viewer, camera controls, and mesh inspector        |
+| 2     | 46-target audit, human review ledger, evidence, and release gate       |
+| 3     | Typing, flashcards, preview navigation, and shared appearance controls |
 
-The [development log](docs/DEVELOPMENT_LOG.md) records decisions, setbacks, and actual test results. The [coverage report](docs/MUSCLE_COVERAGE_V1.md) shows 42 mapped, four blocked, and **0 of 46 human-approved**.
-
-## Planned
-
-- Resolve four mapping blockers and obtain human visual approval for all 46 curriculum targets.
-- Typing and flashcards, all three display modes, review and results, local progress, and PWA installation.
-- Cloudflare Pages deployment and release history.
-
-Human approval is required before a mapped structure can become a graded question. [Anatomy validation notes](docs/ANATOMY_VALIDATION.md)
-
-## Architecture
-
-```mermaid
-flowchart LR
-  React[React controls] --> R3F[React Three Fiber]
-  GLB[Pinned Écorché GLB] --> Loader[Three.js loader and metadata validation]
-  Loader --> R3F
-  R3F --> Focus[Shared Focus materials]
-  Focus --> WebGL[WebGL canvas]
-```
-
-React and strict TypeScript keep settings and source selectors typed. Vite provides the local server and static build. Three.js decodes GLB geometry, React Three Fiber integrates the scene, and Drei supplies orbit controls. [Architecture details](docs/ARCHITECTURE.md)
+Planned milestones include saved progress, missed-question review, and installable practice. The complete release requires licensed, visible geometry and human approval for all 46 targets. [Roadmap](docs/ROADMAP.md) · [Development log](docs/DEVELOPMENT_LOG.md)
 
 ## Checks
 
@@ -73,14 +52,10 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-For installed Google Chrome, run `ANATOMY_USE_CHROME=1 npm run test:e2e`. See the [development log](docs/DEVELOPMENT_LOG.md) for actual results. The read-only GitHub Actions workflow runs lint, typecheck, unit and integration tests, coverage verification, and build. Run `npm run release:check` after the build to evaluate all 46 anatomy release prerequisites.
+Use `ANATOMY_USE_CHROME=1 npm run test:e2e` for installed Google Chrome. To check the v1.0 anatomy gate, run `npm run release:check` after building. The current ledger leaves that gate closed.
 
 ## Credits and portfolio
 
-The model is Écorché, based on BodyParts3D and Z-Anatomy, and is redistributed under CC BY-SA 4.0. [Asset provenance and licenses](THIRD_PARTY_ASSETS.md)
+The model is Écorché by Charleeh, based on BodyParts3D and Z-Anatomy and redistributed under CC BY-SA 4.0. The screenshots show this app's rendering of that model. [Asset attribution and licenses](THIRD_PARTY_ASSETS.md)
 
-### Development process and AI assistance
-
-The student supplied the curriculum and defined the project requirements. Codex assisted with implementation and automated checks. [Portfolio summary](docs/PORTFOLIO_SUMMARY.md)
-
-[Roadmap](docs/ROADMAP.md) · [Technical decisions](docs/DECISIONS.md) · [Visual design](docs/VISUAL_DESIGN_SPEC.md) · [Publication instructions](docs/DEPLOYMENT.md)
+The student supplied the curriculum and defined the design, learning, and release requirements. Codex assisted with implementation and automated checks. [Portfolio summary](docs/PORTFOLIO_SUMMARY.md) · [Architecture](docs/ARCHITECTURE.md) · [Keyboard shortcuts](docs/KEYBOARD_SHORTCUTS.md)
