@@ -133,7 +133,24 @@ export async function parseAnatomyModel(
 export async function loadAnatomyModel(
   signal: AbortSignal,
   onProgress: (percent: number) => void,
+  expectedSha256?: string,
 ) {
+  async function decode(bytes: ArrayBuffer) {
+    signal.throwIfAborted();
+    if (expectedSha256) {
+      const digest = new Uint8Array(
+        await crypto.subtle.digest('SHA-256', bytes),
+      );
+      const actual = Array.from(digest, (byte) =>
+        byte.toString(16).padStart(2, '0'),
+      ).join('');
+      if (actual !== expectedSha256)
+        throw new Error('The quiz model does not match its approved revision.');
+    }
+    signal.throwIfAborted();
+    return parseAnatomyModel(bytes);
+  }
+
   const modelUrl = `${import.meta.env.BASE_URL}models/ecorche.meshopt.glb`;
   const response = await fetch(modelUrl, { signal });
   if (!response.ok)
@@ -161,11 +178,8 @@ export async function loadAnatomyModel(
       bytes.set(chunk, offset);
       offset += chunk.byteLength;
     }
-    signal.throwIfAborted();
-    return parseAnatomyModel(bytes.buffer);
+    return decode(bytes.buffer);
   }
 
-  const bytes = await response.arrayBuffer();
-  signal.throwIfAborted();
-  return parseAnatomyModel(bytes);
+  return decode(await response.arrayBuffer());
 }

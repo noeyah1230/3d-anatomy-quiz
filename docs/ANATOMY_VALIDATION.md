@@ -28,7 +28,7 @@ The inspected BodyExplorer revision is `7d04bf3c4de2bd9cb234dd51d7e6857c099afafd
 
 ## Human review
 
-1. Start `npm run dev` and open the local URL with `?review=1`. To open one row directly, add `&target=vastus_intermedius` or the corresponding stable ID. The normal app remains the Phase 1 preview.
+1. Start `npm run dev` and open the local URL with `?review=1`. To open one row directly, add `&target=vastus_intermedius` or the corresponding stable ID. The normal app opens the muscle viewer, with separate links for scored practice and the ungraded preview. The review picker labels blocked mappings. Use **Show more surrounding anatomy** for a wider view of nearby structures.
 2. Review each mapped target against its private textbook figure and linked anatomy reference. Inspect both sides, orbit the model and isolate each component or mesh where present. Check identity, parts, laterality, figure alignment and visibility. The left/right captures in the coverage report record the starting views.
 3. After an actual human decision, add an entry keyed by stable ID to [the decision ledger](../src/data/anatomy/human-reviews-v1.json). Use `state` (`approved` or `rejected`), a reviewer identifier suitable for the repository, `date` in YYYY-MM-DD, `note` and the current `mappingFingerprint` from the JSON report. For approval, include `screenshotSha256` from the row’s evidence and a `checks` array containing `identity`, `components`, `laterality`, `figure alignment` and `visibility`. Leave unreviewed records without a decision.
 4. Run `npm run anatomy:validate` and `npm run anatomy:coverage`. The validator detects stale decisions when mapping or evidence changes. A mapped row without a current human decision is pending. An unresolved mapping is blocked.
@@ -36,3 +36,11 @@ The inspected BodyExplorer revision is `7d04bf3c4de2bd9cb234dd51d7e6857c099afafd
 To regenerate review images, use `ANATOMY_USE_CHROME=1 npm run anatomy:capture` with Google Chrome or run `npx playwright install chromium` and `npm run anatomy:capture`. The capture script reuses images that match the mapping and checksum. After a rendering change, `npm run anatomy:capture -- --refresh` recaptures all mapped targets and can invalidate earlier approvals if the images change. Each capture confirms visible red pixels in both initial views. Human review covers component identity and visibility from additional angles.
 
 Run `npm run build` followed by `npm run release:check` to check the anatomical release prerequisites. The gate requires all 46 canonical targets, valid mappings, current evidence and explicit approval, plus the pinned model and notices in the built assets.
+
+## Practice eligibility
+
+The development server and production build use the same audit as the coverage command to generate the practice catalog. A question needs an approved decision, current two-side evidence, and verified source geometry. The browser also checks the GLB hash and required mesh metadata before enabling answers or ratings. Serve graded practice on localhost or HTTPS so the browser can verify the asset hash.
+
+The canonical label and textbook variants are accepted. A reviewer can include additional verified aliases in the decision's optional `acceptedAnswers` array and an answer explanation in its optional `explanation` field. An alias cannot overlap the accepted name of another scope target. Restart the development server or rebuild after updating reviews or evidence.
+
+Browser flow tests intercept the local catalog module with isolated fixtures. Those fixtures are held under `tests/` and do not populate the approval ledger or the normal app catalog.

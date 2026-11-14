@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { ErrorBoundary } from '../../../app/ErrorBoundary';
 import AnatomyViewer, { type CameraCommand } from '../AnatomyViewer';
+import { defaultAppearance } from '../visuals/appearance';
 import type { Highlight, Theme } from '../visuals/materials';
 import {
   asset,
@@ -14,6 +15,10 @@ import {
 } from './catalog';
 
 const initialCommand: CameraCommand = { action: 'frame', view: 'focus' };
+const widerContext = { ...defaultAppearance, mode: 'Context' } as const;
+const mappedCount = records.filter(
+  ({ mapping }) => mapping.status === 'mapped',
+).length;
 
 export default function ReviewApp() {
   const [id, setId] = useState(
@@ -24,6 +29,7 @@ export default function ReviewApp() {
   const [command, setCommand] = useState(initialCommand);
   const [theme, setTheme] = useState<Theme>('dark');
   const [highlight, setHighlight] = useState<Highlight>('red');
+  const [showContext, setShowContext] = useState(false);
   const [ready, setReady] = useState(false);
   const [error, setError] = useState('');
   const [attempt, setAttempt] = useState(0);
@@ -86,9 +92,10 @@ export default function ReviewApp() {
       <main className="page-width">
         <div className="page-heading">
           <h1>Anatomy review</h1>
-          <a className="development" href={import.meta.env.BASE_URL}>
-            Back to prototype
-          </a>
+          <div className="review-navigation">
+            <a href={import.meta.env.BASE_URL}>Muscle viewer</a>
+            <a href="?study=typing&preview=1">Try ungraded preview</a>
+          </div>
         </div>
         <div className="workspace review-workspace">
           <section className="viewer-card" aria-label="Anatomy review model">
@@ -122,6 +129,9 @@ export default function ReviewApp() {
                       theme={theme}
                       highlight={highlight}
                       command={command}
+                      appearance={
+                        showContext ? widerContext : defaultAppearance
+                      }
                       inspect
                       onReady={setReady}
                       onError={setError}
@@ -170,6 +180,10 @@ export default function ReviewApp() {
           </section>
           <aside className="settings" aria-label="Anatomy review controls">
             <div className="settings-section review-fields">
+              <p>
+                {mappedCount} of {records.length} targets have mapped geometry.{' '}
+                {records.length - mappedCount} are blocked.
+              </p>
               <div>
                 <label htmlFor="review-target">Anatomy target</label>
                 <select
@@ -193,6 +207,7 @@ export default function ReviewApp() {
                   {records.map((entry) => (
                     <option key={entry.id} value={entry.id}>
                       {entry.name}
+                      {entry.mapping.status !== 'mapped' ? ' (blocked)' : ''}
                     </option>
                   ))}
                 </select>
@@ -258,6 +273,22 @@ export default function ReviewApp() {
             </div>
             {target && (
               <>
+                <div className="settings-section">
+                  <label className="appearance-check">
+                    <input
+                      type="checkbox"
+                      checked={showContext}
+                      onChange={(event) =>
+                        setShowContext(event.currentTarget.checked)
+                      }
+                    />
+                    Show more surrounding anatomy
+                  </label>
+                  <p className="review-context-note">
+                    Focus shows a limited area around the selected target. Turn
+                    on more context to see nearby structures in gray.
+                  </p>
+                </div>
                 <div className="settings-section">
                   <h2>Highlight</h2>
                   <div

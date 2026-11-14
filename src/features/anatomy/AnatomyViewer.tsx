@@ -16,14 +16,16 @@ import {
   type MeshMetadata,
 } from './model';
 import type { PreviewTarget } from './targets';
+import { defaultAppearance, type Appearance } from './visuals/appearance';
 import {
   createFocusMaterials,
   planFocus,
+  targetFrame,
   type Highlight,
   type Theme,
 } from './visuals/materials';
 
-type CameraView = 'focus' | 'front' | 'back' | 'left';
+type CameraView = 'focus' | 'front' | 'back' | 'left' | 'right';
 
 export type CameraCommand =
   { action: 'frame'; view: CameraView } | { action: 'zoom'; factor: number };
@@ -34,6 +36,10 @@ type Props = {
   highlight: Highlight;
   command: CameraCommand;
   inspect: boolean;
+  appearance?: Appearance;
+  orbitSpeed?: number;
+  requiredTargets?: readonly PreviewTarget[];
+  expectedAssetHash?: string;
   onReady: (ready: boolean) => void;
   onError: (message: string) => void;
 };
@@ -43,6 +49,7 @@ const directions = {
   front: new Vector3(0, 0, 1),
   back: new Vector3(0, 0, -1),
   left: new Vector3(1, 0, 0),
+  right: new Vector3(-1, 0, 0),
 };
 
 function Scene({
@@ -51,10 +58,15 @@ function Scene({
   focus,
   theme,
   highlight,
+  appearance,
+  orbitSpeed,
   command,
   onError,
   onPick,
-}: Pick<Props, 'theme' | 'highlight' | 'command' | 'onError'> & {
+}: Pick<
+  Props,
+  'theme' | 'highlight' | 'command' | 'onError' | 'appearance' | 'orbitSpeed'
+> & {
   model: AnatomyModel;
   plan: ReturnType<typeof planFocus>;
   focus?: PreviewTarget['focus'];
@@ -78,6 +90,10 @@ function Scene({
     return () => canvas.removeEventListener('webglcontextlost', lost);
   }, [gl, onError]);
 
+  useEffect(() => {
+    invalidate();
+  }, [orbitSpeed, invalidate]);
+
   useLayoutEffect(() => {
     const pool = createFocusMaterials();
     materials.current = pool;
@@ -94,7 +110,7 @@ function Scene({
   useLayoutEffect(() => {
     const pool = materials.current;
     if (!pool) return;
-    pool.update(theme, highlight);
+    pool.update(theme, highlight, appearance);
     for (const [name, entry] of model.meshes) {
       const role = plan.roles.get(name) ?? 'hidden';
       entry.mesh.visible = role !== 'hidden';
@@ -102,7 +118,7 @@ function Scene({
         role === 'hidden' ? entry.originalMaterial : pool[role];
     }
     invalidate();
-  }, [model, plan, theme, highlight, invalidate]);
+  }, [model, plan, theme, highlight, appearance, invalidate]);
 
   useLayoutEffect(() => {
     const orbit = controls.current;
@@ -180,6 +196,8 @@ function Scene({
       <OrbitControls
         ref={controls}
         enablePan={false}
+        autoRotate={Boolean(orbitSpeed)}
+        autoRotateSpeed={orbitSpeed ?? 2}
         minDistance={0.14}
         maxDistance={1.6}
       />
@@ -233,21 +251,35 @@ export default function AnatomyViewer({
   highlight,
   command,
   inspect,
+  appearance = defaultAppearance,
+  orbitSpeed,
+  requiredTargets,
+  expectedAssetHash,
   onReady,
   onError,
 }: Props) {
   const [model, setModel] = useState<AnatomyModel | null>(null);
   const [progress, setProgress] = useState(0);
   const [picked, setPicked] = useState<MeshMetadata | null>(null);
+  const verifiedModel = useMemo(() => {
+    if (model)
+      for (const required of requiredTargets ?? [])
+        selectTarget(model, required);
+    return model;
+  }, [model, requiredTargets]);
+  const frame = useMemo(
+    () => (verifiedModel ? targetFrame(verifiedModel, target) : null),
+    [verifiedModel, target],
+  );
   const plan = useMemo(
-    () => (model ? planFocus(model, target) : null),
-    [model, target],
+    () => (model && frame ? planFocus(model, target, appearance, frame) : null),
+    [model, frame, target, appearance],
   );
 
   useEffect(() => {
     const controller = new AbortController();
     let owned: AnatomyModel | undefined;
-    loadAnatomyModel(controller.signal, setProgress)
+    loadAnatomyModel(controller.signal, setProgress, expectedAssetHash)
       .then((loaded) => {
         if (controller.signal.aborted) {
           loaded.dispose();
@@ -268,7 +300,7 @@ export default function AnatomyViewer({
       controller.abort();
       owned?.dispose();
     };
-  }, [onError]);
+  }, [expectedAssetHash, onError]);
 
   if (!model || !plan) {
     return (
@@ -300,6 +332,8 @@ export default function AnatomyViewer({
           focus={target.focus}
           theme={theme}
           highlight={highlight}
+          appearance={appearance}
+          orbitSpeed={orbitSpeed}
           command={command}
           onError={onError}
           onPick={inspect ? setPicked : undefined}
