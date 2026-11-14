@@ -69,7 +69,7 @@ export function App() {
           Anatomy Quiz
         </div>
         <div className="masthead-controls">
-          <a href="?study=typing">Scored practice</a>
+          <a href="?study=typing">Practice</a>
           <a href="?study=typing&preview=1">Ungraded preview</a>
           <button
             type="button"

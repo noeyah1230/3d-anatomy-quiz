@@ -26,15 +26,17 @@ const views = ['front', 'back', 'left', 'right'] as const;
 
 export default function StudyApp({
   mode,
-  preview,
+  preview: requestedPreview,
 }: {
   mode: StudyMode;
   preview: boolean;
 }) {
+  const hasApprovedQuestions = approvedQuestions.length > 0;
+  const preview = requestedPreview || !hasApprovedQuestions;
   const questions = preview ? previewQuestions : approvedQuestions;
   const [session, setSession] = useState(0);
   const targets = preview ? previewTargets : approvedTargets;
-  const previewQuery = preview ? '&preview=1' : '';
+  const previewQuery = requestedPreview ? '&preview=1' : '';
   const [theme, setTheme] = useTheme();
   const [highlight, setHighlight] = useHighlight();
   const [appearance, setAppearance] = useAppearance();
@@ -128,30 +130,15 @@ export default function StudyApp({
         </nav>
         {preview && (
           <p className="study-preview">
-            <strong>Ungraded preview.</strong> These models are awaiting anatomy
-            review. <a href={`?study=${mode}`}>Go to scored practice</a>
+            <strong>Ungraded preview.</strong>{' '}
+            {hasApprovedQuestions ? (
+              <a href={`?study=${mode}`}>Go to scored practice</a>
+            ) : (
+              'Scored practice opens after anatomy review.'
+            )}
           </p>
         )}
-        {questions.length === 0 ? (
-          <section className="viewer-card study-empty">
-            <p className="region">0 of 46 anatomy targets approved</p>
-            <h2>
-              {mode === 'typing'
-                ? 'No typing questions yet'
-                : 'No flashcards yet'}
-            </h2>
-            <p>
-              Scored practice opens after anatomy review. Explore Masseter and
-              Temporalis in the ungraded preview.
-            </p>
-            <a
-              className="study-primary study-link"
-              href={`?study=${mode}&preview=1`}
-            >
-              Try ungraded preview
-            </a>
-          </section>
-        ) : question ? (
+        {question ? (
           <div className="workspace study-workspace">
             <section className="viewer-card" aria-label="Highlighted anatomy">
               <div className="viewer-heading study-viewer-heading">

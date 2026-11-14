@@ -595,14 +595,6 @@ button[aria-pressed='true'] .selection-dot {
   line-height: 1.55;
 }
 
-.study-link {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  margin-top: 10px;
-  text-decoration: none;
-}
-
 .study-workspace {
   grid-template-columns: minmax(0, 1fr) minmax(0, 320px);
 }

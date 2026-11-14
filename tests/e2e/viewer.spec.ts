@@ -265,28 +265,33 @@ async function practiceFixture(
   );
 }
 
-test('an empty approved catalog keeps both practice modes free of questions', async ({
+test('practice opens directly to ungraded questions when the approved catalog is empty', async ({
   page,
 }) => {
   await practiceFixture(page, { includeQuestions: false });
   await page.goto('/');
-  await page
-    .getByRole('link', { name: 'Scored practice', exact: true })
-    .click();
+  await page.getByRole('link', { name: 'Practice', exact: true }).click();
   await expect(
-    page.getByText('0 of 46 anatomy targets approved'),
+    page.getByText('Scored practice opens after anatomy review.', {
+      exact: false,
+    }),
   ).toBeVisible();
   await expect(
-    page.getByRole('heading', { name: 'No typing questions yet' }),
+    page.getByRole('heading', { name: 'Name the highlighted muscle' }),
   ).toBeVisible();
-  await expect(page.getByRole('textbox')).toHaveCount(0);
-  await page.getByRole('link', { name: 'Flashcards' }).click();
   await expect(
-    page.getByRole('heading', { name: 'No flashcards yet' }),
-  ).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Reveal answer' })).toHaveCount(
+    page.getByRole('textbox', { name: 'Your answer' }),
+  ).toBeEnabled();
+  await expect(page.getByRole('button', { name: 'Check answer' })).toHaveCount(
     0,
   );
+  await page.getByRole('link', { name: 'Flashcards' }).click();
+  await expect(
+    page.getByRole('button', { name: 'Reveal answer' }),
+  ).toBeEnabled();
+  await expect(
+    page.getByRole('link', { name: 'Go to scored practice' }),
+  ).toHaveCount(0);
 });
 
 test('typing checks once, respects text editing and IME, and completes an approved fixture round', async ({
@@ -492,8 +497,7 @@ test('the ungraded preview works without any approved questions or recall rating
   await expect(
     page.getByRole('heading', { name: 'Temporalis', exact: true }),
   ).toBeVisible();
-  await page.getByRole('link', { name: 'Go to scored practice' }).click();
   await expect(
-    page.getByRole('heading', { name: 'No flashcards yet' }),
-  ).toBeVisible();
+    page.getByRole('link', { name: 'Go to scored practice' }),
+  ).toHaveCount(0);
 });

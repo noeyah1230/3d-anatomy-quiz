@@ -89,3 +89,7 @@ Added a separate ungraded preview for the two existing viewer targets. It reveal
 - The clean install, lint, typecheck, 15 Vitest tests, 11 Playwright tests in Chrome, coverage validation, all 42 review-image checksum checks, and production build passed. A production Chrome smoke test exercised the empty scored state, both ungraded modes, development-only review isolation, and 390 px touch emulation. The 46-target release check exited with code 1 as expected at 0 of 46 approvals. Vite still reports the lazy 3D chunk size advisory.
 
 The preview is ready for owner review before publication.
+
+### Practice entry follow-up
+
+The regular Typing and Flashcards routes now open the two ungraded questions automatically when the approved catalog is empty. The preview displays an ungraded label and saves no scores or ratings. Once anatomy is approved, the same routes open the approved catalog. Updated the browser regression to check the default entry into both modes.

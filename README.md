@@ -15,9 +15,9 @@ npm ci
 npm run dev
 ```
 
-Open the URL printed by Vite. Choose **Ungraded preview** in the header, then **Typing** or **Flashcards**. Type a guess or reveal the source model label. The preview saves no scores or recall ratings.
+Open the URL printed by Vite. Choose **Practice** in the header, then **Typing** or **Flashcards**. Both modes open directly to ungraded questions while the approved catalog is empty.
 
-**Scored practice** currently shows an empty state because the anatomy ledger has **0 of 46 human-approved targets**. Once a target is approved, typing checks the answer and flashcards ask for an explicit recall rating.
+The preview uses Masseter and Temporalis, reveals source model labels, and records no scores or ratings. Once a target is approved, the regular practice routes use the approved catalog. Typing checks the answer and flashcards ask for an explicit recall rating.
 
 ## What works today
 
